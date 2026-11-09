@@ -1,0 +1,17 @@
+{
+  "font_name": "Noto Sans CJK Regular OTC",
+  "upstream_release": "Sans2.004",
+  "upstream_commit": "523d033d6cb47f4a80c58a35753646f5c3608a78",
+  "font_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/523d033d6cb47f4a80c58a35753646f5c3608a78/Sans/OTC/NotoSansCJK-Regular.ttc",
+  "font_file": "NotoSansCJK-Regular.ttc",
+  "font_bytes": 19484784,
+  "font_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+  "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/523d033d6cb47f4a80c58a35753646f5c3608a78/LICENSE",
+  "license_file": "LICENSE-NOTO.txt",
+  "license_bytes": 4301,
+  "license_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+  "license_copy_policy": "Exact upstream bytes, including copyright and SIL Open Font License; not edited or translated.",
+  "copyright_file": "COPYRIGHT-NOTO.txt",
+  "copyright_source": "Verbatim unique copyright records from name ID 0 in the unchanged, hash-pinned TTC font.",
+  "copyright_sha256": "6e90fd3d0d7833c890789675674ae9d5f0f135f2fc842247cccffa8f38abb0dd"
+}

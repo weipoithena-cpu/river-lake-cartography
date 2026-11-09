@@ -1,0 +1,11 @@
+{
+  "source": "launcher.c",
+  "source_sha256": "58fb10a6cff351e79ca9cc3be7967462a21480f07eac864546924d3ca582b14e",
+  "launcher": "RiverLakeCartography.exe",
+  "launcher_sha256": "77ca035f544d80702ae8d972fc89f8ca608a3537d69c2b8a5fe418616f89a11d",
+  "compiler": "Zig 0.14.1",
+  "target": "x86_64-windows-gnu",
+  "command": "zig cc -target x86_64-windows-gnu -municode -O2 -Wl,--subsystem,windows launcher.c -o RiverLakeCartography.exe -luser32",
+  "build_host": "Linux x86_64",
+  "native_windows_execution": "not performed by cross compiler"
+}

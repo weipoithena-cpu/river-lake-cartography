@@ -1,0 +1,1623 @@
+{
+  "created_utc": "2026-11-09T07:48:45.889199+00:00",
+  "purpose": "Reference presentation mapping in 16:9 PNG/SVG; no monitoring locations, flow directions, watershed boundaries or management limits are included.",
+  "crs_basis": "The upstream DATA_PROVENANCE.json identified the OSM/Nominatim/Overpass coordinates as WGS 84 longitude/latitude. Coordinates were not relabeled or altered in the English edition.",
+  "source_records": {
+    "lake": {
+      "year": "Survey year not specified",
+      "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+      "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+      "attribution": "© OpenStreetMap contributors · ODbL 1.0 · openstreetmap.org/copyright",
+      "source_name": "OpenStreetMap via Nominatim",
+      "source_url": "https://www.openstreetmap.org/relation/14305804",
+      "version": "Outer way 36808030 v20; last edited 2026-09-16. The edit date is not a survey year.",
+      "retrieved_utc": "2026-11-09T05:44:41.644994+00:00",
+      "notes": "Conventional lake outline; not a surveyed water surface at a specified water level or a statutory management boundary."
+    },
+    "admin": {
+      "year": "Survey year not specified",
+      "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+      "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+      "attribution": "© OpenStreetMap contributors · ODbL 1.0 · openstreetmap.org/copyright",
+      "source_name": "OpenStreetMap via Nominatim",
+      "source_url": "https://www.openstreetmap.org/relation/2147644",
+      "version": "Versions of the four county/district relations are recorded in sources.json; boundaries are not officially certified.",
+      "retrieved_utc": "2026-11-09T05:44:59.677844+00:00",
+      "notes": "Only four county/district polygons are supplied. Province and city area labels use unions of the supplied, correctly affiliated members; complete province and city boundaries are not reconstructed."
+    },
+    "rivers": {
+      "year": "Survey year not specified",
+      "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+      "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+      "attribution": "© OpenStreetMap contributors · ODbL 1.0 · openstreetmap.org/copyright",
+      "source_name": "OpenStreetMap via Overpass API",
+      "source_url": "https://overpass-api.de/api/interpreter",
+      "version": "Per-feature osm_meta records edit timestamps and versions. Available records do not establish the exact retrieval time for this complete river dataset.",
+      "notes": "The supplied dataset contains 153 river/channel centerlines, 87 unnamed. The upstream inventory refers to a different file with 134 named river lines. This example records the actual input OSM IDs; the original full-network query is unavailable. No flow direction or river width is inferred."
+    }
+  },
+  "file_registry": [
+    {
+      "role": "lake",
+      "working_file": "data_work/shijiu_lake_osm.geojson",
+      "source_sha256": "901054adfbc629cb5e6df50a3294f0d8e6b61391bad9d852ceca31e74059d8fe",
+      "working_sha256": "b4520d17e82946ff52da6c8cb248686b7ef597bb61e7866df49833628084b3bd",
+      "feature_count": 1,
+      "crs": "EPSG:4326",
+      "geometry_validity": "The original preparation reported 0 empty and 0 invalid geometries. Its historical check-file path is not included in this public package; see the English-edition geometry verification below.",
+      "license": "ODbL 1.0",
+      "provider": "© OpenStreetMap contributors",
+      "upstream_metadata": [
+        {
+          "name": "Shijiu Lake",
+          "geometry_file": "shijiu_lake_osm.geojson",
+          "source": "OpenStreetMap via Nominatim",
+          "osm_object_url": "https://www.openstreetmap.org/relation/14305804",
+          "retrieval_url": "https://nominatim.openstreetmap.org/search?q=%E7%9F%B3%E8%87%BC%E6%B9%96&format=jsonv2&polygon_geojson=1&limit=1",
+          "retrieved_utc": "2026-11-09T05:44:41.644994+00:00",
+          "crs": "WGS 84 longitude, latitude (EPSG:4326)",
+          "licence": "Open Database Licence 1.0 (ODbL)",
+          "licence_url": "https://www.openstreetmap.org/copyright",
+          "outer_way_id": 36808030,
+          "outer_way_last_edit_utc": "2026-09-16T11:30:51Z",
+          "outer_way_version": 20,
+          "outer_way_nodes": 258
+        }
+      ],
+      "original_source_file_label": "input/shijiu_lake_osm.geojson",
+      "original_metadata_file_label": "input/DATA_PROVENANCE.json",
+      "working_file_is_translation_derivative": true
+    },
+    {
+      "role": "rivers",
+      "working_file": "data_work/rivers_all_local_osm.geojson",
+      "source_sha256": "207f60fb1722425dfe6ef3f3977d8982b8802955697e2e41caea806e6010349c",
+      "working_sha256": "24bc9333de53d3e4d50e6b9b72ba714b0817475693d035265d1f55b27fd3679c",
+      "feature_count": 153,
+      "crs": "EPSG:4326",
+      "geometry_validity": "The original preparation reported 0 empty and 0 invalid geometries. Its historical check-file path is not included in this public package; see the English-edition geometry verification below.",
+      "license": "ODbL 1.0",
+      "provider": "© OpenStreetMap contributors",
+      "per_feature_source": [
+        {
+          "feature_index": 0,
+          "name": null,
+          "osm_id": 36808257,
+          "page_url": "https://www.openstreetmap.org/way/36808257",
+          "version": 7,
+          "last_edit_utc": "2020-05-20T09:14:17Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 1,
+          "name": "Yunliang River",
+          "osm_id": 58728113,
+          "page_url": "https://www.openstreetmap.org/way/58728113",
+          "version": 8,
+          "last_edit_utc": "2022-03-15T22:04:03Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 2,
+          "name": null,
+          "osm_id": 96856170,
+          "page_url": "https://www.openstreetmap.org/way/96856170",
+          "version": 4,
+          "last_edit_utc": "2026-05-13T14:53:37Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 3,
+          "name": null,
+          "osm_id": 106061869,
+          "page_url": "https://www.openstreetmap.org/way/106061869",
+          "version": 11,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 4,
+          "name": "Yanzhi River",
+          "osm_id": 106061870,
+          "page_url": "https://www.openstreetmap.org/way/106061870",
+          "version": 10,
+          "last_edit_utc": "2026-07-22T13:11:48Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 5,
+          "name": "Putang River",
+          "osm_id": 106061872,
+          "page_url": "https://www.openstreetmap.org/way/106061872",
+          "version": 5,
+          "last_edit_utc": "2022-10-12T11:24:51Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 6,
+          "name": "Xinqiao River",
+          "osm_id": 106061874,
+          "page_url": "https://www.openstreetmap.org/way/106061874",
+          "version": 8,
+          "last_edit_utc": "2026-02-20T11:01:27Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 7,
+          "name": null,
+          "osm_id": 260971745,
+          "page_url": "https://www.openstreetmap.org/way/260971745",
+          "version": 2,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 8,
+          "name": "Danyang River",
+          "osm_id": 260971746,
+          "page_url": "https://www.openstreetmap.org/way/260971746",
+          "version": 5,
+          "last_edit_utc": "2025-07-08T17:17:54Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 9,
+          "name": null,
+          "osm_id": 260971757,
+          "page_url": "https://www.openstreetmap.org/way/260971757",
+          "version": 1,
+          "last_edit_utc": "2014-02-10T19:14:12Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 10,
+          "name": null,
+          "osm_id": 294631353,
+          "page_url": "https://www.openstreetmap.org/way/294631353",
+          "version": 1,
+          "last_edit_utc": "2014-07-27T07:20:18Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 11,
+          "name": "Hefeng Diversion River",
+          "osm_id": 294631358,
+          "page_url": "https://www.openstreetmap.org/way/294631358",
+          "version": 4,
+          "last_edit_utc": "2022-06-29T04:28:22Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 12,
+          "name": null,
+          "osm_id": 343555412,
+          "page_url": "https://www.openstreetmap.org/way/343555412",
+          "version": 4,
+          "last_edit_utc": "2024-10-05T18:39:17Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 13,
+          "name": "Qiqiao River",
+          "osm_id": 368090038,
+          "page_url": "https://www.openstreetmap.org/way/368090038",
+          "version": 5,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 14,
+          "name": null,
+          "osm_id": 376783324,
+          "page_url": "https://www.openstreetmap.org/way/376783324",
+          "version": 3,
+          "last_edit_utc": "2024-11-02T15:18:18Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 15,
+          "name": null,
+          "osm_id": 476631463,
+          "page_url": "https://www.openstreetmap.org/way/476631463",
+          "version": 1,
+          "last_edit_utc": "2017-02-23T12:26:15Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 16,
+          "name": "Sangan River",
+          "osm_id": 476646930,
+          "page_url": "https://www.openstreetmap.org/way/476646930",
+          "version": 7,
+          "last_edit_utc": "2025-07-09T10:47:12Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 17,
+          "name": null,
+          "osm_id": 476654117,
+          "page_url": "https://www.openstreetmap.org/way/476654117",
+          "version": 3,
+          "last_edit_utc": "2026-09-09T03:06:43Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 18,
+          "name": "Yunliang River",
+          "osm_id": 481668466,
+          "page_url": "https://www.openstreetmap.org/way/481668466",
+          "version": 6,
+          "last_edit_utc": "2022-06-29T03:47:27Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 19,
+          "name": "Sangan River",
+          "osm_id": 581508687,
+          "page_url": "https://www.openstreetmap.org/way/581508687",
+          "version": 8,
+          "last_edit_utc": "2025-07-27T09:09:36Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 20,
+          "name": null,
+          "osm_id": 581512674,
+          "page_url": "https://www.openstreetmap.org/way/581512674",
+          "version": 3,
+          "last_edit_utc": "2025-07-08T11:01:20Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 21,
+          "name": "Nangang River",
+          "osm_id": 581513851,
+          "page_url": "https://www.openstreetmap.org/way/581513851",
+          "version": 6,
+          "last_edit_utc": "2025-07-27T09:09:36Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 22,
+          "name": "Zhongshan River",
+          "osm_id": 590891909,
+          "page_url": "https://www.openstreetmap.org/way/590891909",
+          "version": 4,
+          "last_edit_utc": "2026-09-28T08:24:52Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 23,
+          "name": "Nanmen River",
+          "osm_id": 590891912,
+          "page_url": "https://www.openstreetmap.org/way/590891912",
+          "version": 8,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 24,
+          "name": "Guanxi River",
+          "osm_id": 662338639,
+          "page_url": "https://www.openstreetmap.org/way/662338639",
+          "version": 8,
+          "last_edit_utc": "2024-09-07T15:04:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 25,
+          "name": null,
+          "osm_id": 759976354,
+          "page_url": "https://www.openstreetmap.org/way/759976354",
+          "version": 2,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 26,
+          "name": null,
+          "osm_id": 759976362,
+          "page_url": "https://www.openstreetmap.org/way/759976362",
+          "version": 5,
+          "last_edit_utc": "2022-05-26T19:34:09Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 27,
+          "name": "Luxi River",
+          "osm_id": 759977989,
+          "page_url": "https://www.openstreetmap.org/way/759977989",
+          "version": 3,
+          "last_edit_utc": "2022-05-09T11:06:10Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 28,
+          "name": "Zhongliu River",
+          "osm_id": 759977992,
+          "page_url": "https://www.openstreetmap.org/way/759977992",
+          "version": 2,
+          "last_edit_utc": "2022-05-09T11:06:10Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 29,
+          "name": null,
+          "osm_id": 856358323,
+          "page_url": "https://www.openstreetmap.org/way/856358323",
+          "version": 2,
+          "last_edit_utc": "2024-05-13T17:36:50Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 30,
+          "name": "Zhongshan River",
+          "osm_id": 903408515,
+          "page_url": "https://www.openstreetmap.org/way/903408515",
+          "version": 3,
+          "last_edit_utc": "2025-07-07T15:26:12Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 31,
+          "name": null,
+          "osm_id": 922732156,
+          "page_url": "https://www.openstreetmap.org/way/922732156",
+          "version": 1,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 32,
+          "name": null,
+          "osm_id": 922732163,
+          "page_url": "https://www.openstreetmap.org/way/922732163",
+          "version": 1,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 33,
+          "name": null,
+          "osm_id": 922732168,
+          "page_url": "https://www.openstreetmap.org/way/922732168",
+          "version": 1,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 34,
+          "name": null,
+          "osm_id": 922732169,
+          "page_url": "https://www.openstreetmap.org/way/922732169",
+          "version": 1,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 35,
+          "name": null,
+          "osm_id": 922732170,
+          "page_url": "https://www.openstreetmap.org/way/922732170",
+          "version": 1,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 36,
+          "name": null,
+          "osm_id": 922732171,
+          "page_url": "https://www.openstreetmap.org/way/922732171",
+          "version": 1,
+          "last_edit_utc": "2021-03-26T20:51:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 37,
+          "name": "Tingtou River",
+          "osm_id": 988512353,
+          "page_url": "https://www.openstreetmap.org/way/988512353",
+          "version": 3,
+          "last_edit_utc": "2023-01-30T18:18:22Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 38,
+          "name": null,
+          "osm_id": 1034840476,
+          "page_url": "https://www.openstreetmap.org/way/1034840476",
+          "version": 2,
+          "last_edit_utc": "2025-07-11T03:19:19Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 39,
+          "name": "Guxi River",
+          "osm_id": 1040665115,
+          "page_url": "https://www.openstreetmap.org/way/1040665115",
+          "version": 1,
+          "last_edit_utc": "2022-03-15T22:04:03Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 40,
+          "name": "Guanxi River",
+          "osm_id": 1058530822,
+          "page_url": "https://www.openstreetmap.org/way/1058530822",
+          "version": 3,
+          "last_edit_utc": "2023-11-24T12:12:23Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 41,
+          "name": "Guanxi River",
+          "osm_id": 1058530823,
+          "page_url": "https://www.openstreetmap.org/way/1058530823",
+          "version": 3,
+          "last_edit_utc": "2023-11-24T12:12:23Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 42,
+          "name": null,
+          "osm_id": 1058530827,
+          "page_url": "https://www.openstreetmap.org/way/1058530827",
+          "version": 1,
+          "last_edit_utc": "2022-05-09T11:06:10Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 43,
+          "name": null,
+          "osm_id": 1058530828,
+          "page_url": "https://www.openstreetmap.org/way/1058530828",
+          "version": 1,
+          "last_edit_utc": "2022-05-09T11:06:10Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 44,
+          "name": "Jia River",
+          "osm_id": 1058530831,
+          "page_url": "https://www.openstreetmap.org/way/1058530831",
+          "version": 1,
+          "last_edit_utc": "2022-05-09T11:06:10Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 45,
+          "name": null,
+          "osm_id": 1061021554,
+          "page_url": "https://www.openstreetmap.org/way/1061021554",
+          "version": 9,
+          "last_edit_utc": "2026-10-10T16:36:37Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 46,
+          "name": null,
+          "osm_id": 1064127525,
+          "page_url": "https://www.openstreetmap.org/way/1064127525",
+          "version": 2,
+          "last_edit_utc": "2026-02-08T06:51:52Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 47,
+          "name": null,
+          "osm_id": 1064127529,
+          "page_url": "https://www.openstreetmap.org/way/1064127529",
+          "version": 1,
+          "last_edit_utc": "2022-05-26T19:25:42Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 48,
+          "name": null,
+          "osm_id": 1064127545,
+          "page_url": "https://www.openstreetmap.org/way/1064127545",
+          "version": 1,
+          "last_edit_utc": "2022-05-26T19:25:42Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 49,
+          "name": null,
+          "osm_id": 1064127549,
+          "page_url": "https://www.openstreetmap.org/way/1064127549",
+          "version": 1,
+          "last_edit_utc": "2022-05-26T19:25:42Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 50,
+          "name": "Hefeng Diversion River",
+          "osm_id": 1074385443,
+          "page_url": "https://www.openstreetmap.org/way/1074385443",
+          "version": 1,
+          "last_edit_utc": "2022-06-29T04:28:22Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 51,
+          "name": null,
+          "osm_id": 1282201848,
+          "page_url": "https://www.openstreetmap.org/way/1282201848",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 52,
+          "name": null,
+          "osm_id": 1282201850,
+          "page_url": "https://www.openstreetmap.org/way/1282201850",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 53,
+          "name": null,
+          "osm_id": 1282201851,
+          "page_url": "https://www.openstreetmap.org/way/1282201851",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 54,
+          "name": null,
+          "osm_id": 1282201860,
+          "page_url": "https://www.openstreetmap.org/way/1282201860",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 55,
+          "name": null,
+          "osm_id": 1282201862,
+          "page_url": "https://www.openstreetmap.org/way/1282201862",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 56,
+          "name": null,
+          "osm_id": 1282201867,
+          "page_url": "https://www.openstreetmap.org/way/1282201867",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 57,
+          "name": null,
+          "osm_id": 1282201868,
+          "page_url": "https://www.openstreetmap.org/way/1282201868",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 58,
+          "name": null,
+          "osm_id": 1282201869,
+          "page_url": "https://www.openstreetmap.org/way/1282201869",
+          "version": 1,
+          "last_edit_utc": "2024-05-12T16:18:16Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 59,
+          "name": null,
+          "osm_id": 1282201872,
+          "page_url": "https://www.openstreetmap.org/way/1282201872",
+          "version": 2,
+          "last_edit_utc": "2024-05-12T16:48:46Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 60,
+          "name": null,
+          "osm_id": 1321466582,
+          "page_url": "https://www.openstreetmap.org/way/1321466582",
+          "version": 2,
+          "last_edit_utc": "2026-06-27T11:50:45Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 61,
+          "name": null,
+          "osm_id": 1321466583,
+          "page_url": "https://www.openstreetmap.org/way/1321466583",
+          "version": 1,
+          "last_edit_utc": "2024-10-05T18:39:17Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 62,
+          "name": null,
+          "osm_id": 1321466590,
+          "page_url": "https://www.openstreetmap.org/way/1321466590",
+          "version": 1,
+          "last_edit_utc": "2024-10-05T18:39:17Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 63,
+          "name": null,
+          "osm_id": 1321466591,
+          "page_url": "https://www.openstreetmap.org/way/1321466591",
+          "version": 2,
+          "last_edit_utc": "2025-07-01T16:26:02Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 64,
+          "name": null,
+          "osm_id": 1364746783,
+          "page_url": "https://www.openstreetmap.org/way/1364746783",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 65,
+          "name": null,
+          "osm_id": 1364746790,
+          "page_url": "https://www.openstreetmap.org/way/1364746790",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 66,
+          "name": null,
+          "osm_id": 1364746835,
+          "page_url": "https://www.openstreetmap.org/way/1364746835",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 67,
+          "name": null,
+          "osm_id": 1364746836,
+          "page_url": "https://www.openstreetmap.org/way/1364746836",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 68,
+          "name": null,
+          "osm_id": 1364746837,
+          "page_url": "https://www.openstreetmap.org/way/1364746837",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 69,
+          "name": null,
+          "osm_id": 1364746838,
+          "page_url": "https://www.openstreetmap.org/way/1364746838",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 70,
+          "name": null,
+          "osm_id": 1364746842,
+          "page_url": "https://www.openstreetmap.org/way/1364746842",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 71,
+          "name": null,
+          "osm_id": 1364746843,
+          "page_url": "https://www.openstreetmap.org/way/1364746843",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 72,
+          "name": null,
+          "osm_id": 1364746844,
+          "page_url": "https://www.openstreetmap.org/way/1364746844",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 73,
+          "name": null,
+          "osm_id": 1364746845,
+          "page_url": "https://www.openstreetmap.org/way/1364746845",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 74,
+          "name": null,
+          "osm_id": 1364746846,
+          "page_url": "https://www.openstreetmap.org/way/1364746846",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 75,
+          "name": null,
+          "osm_id": 1364746847,
+          "page_url": "https://www.openstreetmap.org/way/1364746847",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 76,
+          "name": null,
+          "osm_id": 1364746848,
+          "page_url": "https://www.openstreetmap.org/way/1364746848",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 77,
+          "name": null,
+          "osm_id": 1364746849,
+          "page_url": "https://www.openstreetmap.org/way/1364746849",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 78,
+          "name": null,
+          "osm_id": 1364746850,
+          "page_url": "https://www.openstreetmap.org/way/1364746850",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 79,
+          "name": null,
+          "osm_id": 1364746851,
+          "page_url": "https://www.openstreetmap.org/way/1364746851",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 80,
+          "name": null,
+          "osm_id": 1364746852,
+          "page_url": "https://www.openstreetmap.org/way/1364746852",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 81,
+          "name": null,
+          "osm_id": 1364746853,
+          "page_url": "https://www.openstreetmap.org/way/1364746853",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 82,
+          "name": null,
+          "osm_id": 1364746854,
+          "page_url": "https://www.openstreetmap.org/way/1364746854",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 83,
+          "name": null,
+          "osm_id": 1364746855,
+          "page_url": "https://www.openstreetmap.org/way/1364746855",
+          "version": 1,
+          "last_edit_utc": "2025-03-05T12:47:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 84,
+          "name": "Nanmen River",
+          "osm_id": 1408272257,
+          "page_url": "https://www.openstreetmap.org/way/1408272257",
+          "version": 2,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 85,
+          "name": "Nanmen River",
+          "osm_id": 1408272259,
+          "page_url": "https://www.openstreetmap.org/way/1408272259",
+          "version": 3,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 86,
+          "name": "Nanmen River",
+          "osm_id": 1408272262,
+          "page_url": "https://www.openstreetmap.org/way/1408272262",
+          "version": 4,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 87,
+          "name": "Nanmen River",
+          "osm_id": 1408272263,
+          "page_url": "https://www.openstreetmap.org/way/1408272263",
+          "version": 3,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 88,
+          "name": "Nanmen River",
+          "osm_id": 1408293969,
+          "page_url": "https://www.openstreetmap.org/way/1408293969",
+          "version": 2,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 89,
+          "name": null,
+          "osm_id": 1408293972,
+          "page_url": "https://www.openstreetmap.org/way/1408293972",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T14:21:01Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 90,
+          "name": null,
+          "osm_id": 1408293973,
+          "page_url": "https://www.openstreetmap.org/way/1408293973",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T14:21:01Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 91,
+          "name": null,
+          "osm_id": 1408293978,
+          "page_url": "https://www.openstreetmap.org/way/1408293978",
+          "version": 3,
+          "last_edit_utc": "2026-02-12T00:50:36Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 92,
+          "name": null,
+          "osm_id": 1408293979,
+          "page_url": "https://www.openstreetmap.org/way/1408293979",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T14:21:01Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 93,
+          "name": null,
+          "osm_id": 1408293980,
+          "page_url": "https://www.openstreetmap.org/way/1408293980",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T14:21:01Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 94,
+          "name": null,
+          "osm_id": 1408293981,
+          "page_url": "https://www.openstreetmap.org/way/1408293981",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T14:21:01Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 95,
+          "name": null,
+          "osm_id": 1408375122,
+          "page_url": "https://www.openstreetmap.org/way/1408375122",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T15:26:43Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 96,
+          "name": "Nanmen River",
+          "osm_id": 1408375157,
+          "page_url": "https://www.openstreetmap.org/way/1408375157",
+          "version": 2,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 97,
+          "name": null,
+          "osm_id": 1408450111,
+          "page_url": "https://www.openstreetmap.org/way/1408450111",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T22:13:30Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 98,
+          "name": null,
+          "osm_id": 1408450112,
+          "page_url": "https://www.openstreetmap.org/way/1408450112",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T22:13:30Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 99,
+          "name": null,
+          "osm_id": 1408450113,
+          "page_url": "https://www.openstreetmap.org/way/1408450113",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T22:13:30Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 100,
+          "name": null,
+          "osm_id": 1408450114,
+          "page_url": "https://www.openstreetmap.org/way/1408450114",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T22:13:30Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 101,
+          "name": null,
+          "osm_id": 1408450115,
+          "page_url": "https://www.openstreetmap.org/way/1408450115",
+          "version": 1,
+          "last_edit_utc": "2025-06-21T22:13:30Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 102,
+          "name": "Songjiadian",
+          "osm_id": 1409261641,
+          "page_url": "https://www.openstreetmap.org/way/1409261641",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 103,
+          "name": "Wangjiadian",
+          "osm_id": 1409261642,
+          "page_url": "https://www.openstreetmap.org/way/1409261642",
+          "version": 3,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 104,
+          "name": "Wangjiadian",
+          "osm_id": 1409261643,
+          "page_url": "https://www.openstreetmap.org/way/1409261643",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 105,
+          "name": "Wangjiadian",
+          "osm_id": 1409261646,
+          "page_url": "https://www.openstreetmap.org/way/1409261646",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 106,
+          "name": "Wangjiadian",
+          "osm_id": 1409261647,
+          "page_url": "https://www.openstreetmap.org/way/1409261647",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 107,
+          "name": "Wangjiadian",
+          "osm_id": 1409261648,
+          "page_url": "https://www.openstreetmap.org/way/1409261648",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 108,
+          "name": "Wangjiadian",
+          "osm_id": 1409261649,
+          "page_url": "https://www.openstreetmap.org/way/1409261649",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 109,
+          "name": "Wangjiadian",
+          "osm_id": 1409261650,
+          "page_url": "https://www.openstreetmap.org/way/1409261650",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 110,
+          "name": "Wangjiadian",
+          "osm_id": 1409261651,
+          "page_url": "https://www.openstreetmap.org/way/1409261651",
+          "version": 3,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 111,
+          "name": "Wangjiadian",
+          "osm_id": 1409261652,
+          "page_url": "https://www.openstreetmap.org/way/1409261652",
+          "version": 3,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 112,
+          "name": "Wangjiadian",
+          "osm_id": 1409261653,
+          "page_url": "https://www.openstreetmap.org/way/1409261653",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 113,
+          "name": "Wangjiadian",
+          "osm_id": 1409261656,
+          "page_url": "https://www.openstreetmap.org/way/1409261656",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 114,
+          "name": "Wangjiadian",
+          "osm_id": 1409261657,
+          "page_url": "https://www.openstreetmap.org/way/1409261657",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 115,
+          "name": "Wangjiadian",
+          "osm_id": 1409261658,
+          "page_url": "https://www.openstreetmap.org/way/1409261658",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 116,
+          "name": "Wangjiadian",
+          "osm_id": 1409261659,
+          "page_url": "https://www.openstreetmap.org/way/1409261659",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 117,
+          "name": "Wangjiadian",
+          "osm_id": 1409261660,
+          "page_url": "https://www.openstreetmap.org/way/1409261660",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 118,
+          "name": "Wangjiadian",
+          "osm_id": 1409261661,
+          "page_url": "https://www.openstreetmap.org/way/1409261661",
+          "version": 2,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 119,
+          "name": "Nanmen River",
+          "osm_id": 1411767869,
+          "page_url": "https://www.openstreetmap.org/way/1411767869",
+          "version": 2,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 120,
+          "name": "Nanmen River",
+          "osm_id": 1411767870,
+          "page_url": "https://www.openstreetmap.org/way/1411767870",
+          "version": 2,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 121,
+          "name": "Nanmen River",
+          "osm_id": 1411916173,
+          "page_url": "https://www.openstreetmap.org/way/1411916173",
+          "version": 2,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 122,
+          "name": "Nanmen River",
+          "osm_id": 1411916174,
+          "page_url": "https://www.openstreetmap.org/way/1411916174",
+          "version": 2,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 123,
+          "name": "Hengxi River",
+          "osm_id": 1413159942,
+          "page_url": "https://www.openstreetmap.org/way/1413159942",
+          "version": 1,
+          "last_edit_utc": "2025-07-08T00:46:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 124,
+          "name": "Hengxi River",
+          "osm_id": 1413159943,
+          "page_url": "https://www.openstreetmap.org/way/1413159943",
+          "version": 1,
+          "last_edit_utc": "2025-07-08T00:46:26Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 125,
+          "name": null,
+          "osm_id": 1413236084,
+          "page_url": "https://www.openstreetmap.org/way/1413236084",
+          "version": 2,
+          "last_edit_utc": "2025-07-27T09:09:36Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 126,
+          "name": "Danyang River",
+          "osm_id": 1413304610,
+          "page_url": "https://www.openstreetmap.org/way/1413304610",
+          "version": 1,
+          "last_edit_utc": "2025-07-08T17:17:54Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 127,
+          "name": "Danyang River",
+          "osm_id": 1413304611,
+          "page_url": "https://www.openstreetmap.org/way/1413304611",
+          "version": 1,
+          "last_edit_utc": "2025-07-08T17:17:54Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 128,
+          "name": "Huajin River",
+          "osm_id": 1413304723,
+          "page_url": "https://www.openstreetmap.org/way/1413304723",
+          "version": 1,
+          "last_edit_utc": "2025-07-08T17:17:54Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 129,
+          "name": "Huajin River",
+          "osm_id": 1413304725,
+          "page_url": "https://www.openstreetmap.org/way/1413304725",
+          "version": 2,
+          "last_edit_utc": "2026-07-21T23:54:59Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 130,
+          "name": null,
+          "osm_id": 1413458693,
+          "page_url": "https://www.openstreetmap.org/way/1413458693",
+          "version": 1,
+          "last_edit_utc": "2025-07-09T10:47:12Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 131,
+          "name": null,
+          "osm_id": 1413488327,
+          "page_url": "https://www.openstreetmap.org/way/1413488327",
+          "version": 2,
+          "last_edit_utc": "2025-08-21T12:32:40Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 132,
+          "name": null,
+          "osm_id": 1413488336,
+          "page_url": "https://www.openstreetmap.org/way/1413488336",
+          "version": 2,
+          "last_edit_utc": "2025-08-21T12:32:40Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 133,
+          "name": null,
+          "osm_id": 1413488341,
+          "page_url": "https://www.openstreetmap.org/way/1413488341",
+          "version": 2,
+          "last_edit_utc": "2025-08-21T12:32:40Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 134,
+          "name": null,
+          "osm_id": 1413488342,
+          "page_url": "https://www.openstreetmap.org/way/1413488342",
+          "version": 3,
+          "last_edit_utc": "2025-07-19T11:43:06Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 135,
+          "name": null,
+          "osm_id": 1413993664,
+          "page_url": "https://www.openstreetmap.org/way/1413993664",
+          "version": 1,
+          "last_edit_utc": "2025-07-11T03:19:19Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 136,
+          "name": null,
+          "osm_id": 1423875710,
+          "page_url": "https://www.openstreetmap.org/way/1423875710",
+          "version": 2,
+          "last_edit_utc": "2026-01-19T03:21:34Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 137,
+          "name": null,
+          "osm_id": 1423875711,
+          "page_url": "https://www.openstreetmap.org/way/1423875711",
+          "version": 2,
+          "last_edit_utc": "2026-01-19T03:21:34Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 138,
+          "name": "Maojia Flood Diversion Channel",
+          "osm_id": 1454599921,
+          "page_url": "https://www.openstreetmap.org/way/1454599921",
+          "version": 1,
+          "last_edit_utc": "2025-11-29T08:13:15Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 139,
+          "name": null,
+          "osm_id": 1456036597,
+          "page_url": "https://www.openstreetmap.org/way/1456036597",
+          "version": 1,
+          "last_edit_utc": "2025-12-04T15:30:25Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 140,
+          "name": null,
+          "osm_id": 1468131770,
+          "page_url": "https://www.openstreetmap.org/way/1468131770",
+          "version": 1,
+          "last_edit_utc": "2026-01-19T03:21:34Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 141,
+          "name": null,
+          "osm_id": 1468131771,
+          "page_url": "https://www.openstreetmap.org/way/1468131771",
+          "version": 1,
+          "last_edit_utc": "2026-01-19T03:21:34Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 142,
+          "name": null,
+          "osm_id": 1513089965,
+          "page_url": "https://www.openstreetmap.org/way/1513089965",
+          "version": 1,
+          "last_edit_utc": "2026-05-13T14:53:37Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 143,
+          "name": null,
+          "osm_id": 1513089966,
+          "page_url": "https://www.openstreetmap.org/way/1513089966",
+          "version": 1,
+          "last_edit_utc": "2026-05-13T14:53:37Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 144,
+          "name": "Hanhucun River",
+          "osm_id": 1533159059,
+          "page_url": "https://www.openstreetmap.org/way/1533159059",
+          "version": 1,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 145,
+          "name": "Wangjiadian",
+          "osm_id": 1533159060,
+          "page_url": "https://www.openstreetmap.org/way/1533159060",
+          "version": 1,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 146,
+          "name": "Wangjiadian",
+          "osm_id": 1533159061,
+          "page_url": "https://www.openstreetmap.org/way/1533159061",
+          "version": 1,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 147,
+          "name": "Wangjiadian",
+          "osm_id": 1533159062,
+          "page_url": "https://www.openstreetmap.org/way/1533159062",
+          "version": 1,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 148,
+          "name": "Hanhucun River",
+          "osm_id": 1533159063,
+          "page_url": "https://www.openstreetmap.org/way/1533159063",
+          "version": 1,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 149,
+          "name": "Wangjiadian",
+          "osm_id": 1533159074,
+          "page_url": "https://www.openstreetmap.org/way/1533159074",
+          "version": 1,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 150,
+          "name": "Hanhucun River",
+          "osm_id": 1533159075,
+          "page_url": "https://www.openstreetmap.org/way/1533159075",
+          "version": 1,
+          "last_edit_utc": "2026-06-28T05:33:39Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 151,
+          "name": "Nanmen River",
+          "osm_id": 1544699977,
+          "page_url": "https://www.openstreetmap.org/way/1544699977",
+          "version": 1,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        },
+        {
+          "feature_index": 152,
+          "name": "Nanmen River",
+          "osm_id": 1544699978,
+          "page_url": "https://www.openstreetmap.org/way/1544699978",
+          "version": 1,
+          "last_edit_utc": "2026-07-26T02:19:21Z",
+          "retrieval_endpoint": "https://overpass-api.de/api/interpreter"
+        }
+      ],
+      "original_source_file_label": "input/rivers_all_local_osm.geojson",
+      "original_metadata_file_label": "input/DATA_PROVENANCE.json",
+      "working_file_is_translation_derivative": true
+    },
+    {
+      "role": "admin",
+      "working_file": "data_work/four_districts_osm.geojson",
+      "source_sha256": "02aa427f10f53850bf9b72456b3ab256d72df54d2d0acbc2a37040cfe68b1a54",
+      "working_sha256": "6319393ebd6ca3d6d1f7ceb7eec0cdd06c1fc1525c01e300b41a5739a3be0669",
+      "feature_count": 4,
+      "crs": "EPSG:4326",
+      "geometry_validity": "The original preparation reported 0 empty and 0 invalid geometries. Its historical check-file path is not included in this public package; see the English-edition geometry verification below.",
+      "license": "ODbL 1.0",
+      "provider": "© OpenStreetMap contributors",
+      "upstream_metadata": [
+        {
+          "name": "Gaochun District",
+          "geometry_file": "gaochun_osm.geojson",
+          "source": "OpenStreetMap via Nominatim",
+          "osm_object_url": "https://www.openstreetmap.org/relation/2147644",
+          "retrieval_url": "https://nominatim.openstreetmap.org/search?q=%E9%AB%98%E6%B7%B3%E5%8C%BA%2C%E5%8D%97%E4%BA%AC%E5%B8%82%2C%E6%B1%9F%E8%8B%8F%E7%9C%81%2C%E4%B8%AD%E5%9B%BD&format=jsonv2&polygon_geojson=1&limit=1",
+          "retrieved_utc": "2026-11-09T05:44:46.299627+00:00",
+          "crs": "WGS 84 longitude, latitude (EPSG:4326)",
+          "licence": "Open Database Licence 1.0 (ODbL)",
+          "licence_url": "https://www.openstreetmap.org/copyright",
+          "relation_last_edit_utc": "2024-05-17T09:50:54Z",
+          "relation_version": 25
+        },
+        {
+          "name": "Lishui District",
+          "geometry_file": "lishui_osm.geojson",
+          "source": "OpenStreetMap via Nominatim",
+          "osm_object_url": "https://www.openstreetmap.org/relation/2147643",
+          "retrieval_url": "https://nominatim.openstreetmap.org/search?q=%E6%BA%A7%E6%B0%B4%E5%8C%BA%2C%E5%8D%97%E4%BA%AC%E5%B8%82%2C%E6%B1%9F%E8%8B%8F%E7%9C%81%2C%E4%B8%AD%E5%9B%BD&format=jsonv2&polygon_geojson=1&limit=1",
+          "retrieved_utc": "2026-11-09T05:44:50.448533+00:00",
+          "crs": "WGS 84 longitude, latitude (EPSG:4326)",
+          "licence": "Open Database Licence 1.0 (ODbL)",
+          "licence_url": "https://www.openstreetmap.org/copyright",
+          "relation_last_edit_utc": "2026-02-17T00:02:38Z",
+          "relation_version": 27
+        },
+        {
+          "name": "Dangtu County",
+          "geometry_file": "dangtu_osm.geojson",
+          "source": "OpenStreetMap via Nominatim",
+          "osm_object_url": "https://www.openstreetmap.org/relation/3260811",
+          "retrieval_url": "https://nominatim.openstreetmap.org/search?q=%E5%BD%93%E6%B6%82%E5%8E%BF%2C%E9%A9%AC%E9%9E%8D%E5%B1%B1%E5%B8%82%2C%E5%AE%89%E5%BE%BD%E7%9C%81%2C%E4%B8%AD%E5%9B%BD&format=jsonv2&polygon_geojson=1&limit=1",
+          "retrieved_utc": "2026-11-09T05:44:54.849501+00:00",
+          "crs": "WGS 84 longitude, latitude (EPSG:4326)",
+          "licence": "Open Database Licence 1.0 (ODbL)",
+          "licence_url": "https://www.openstreetmap.org/copyright",
+          "relation_last_edit_utc": "2024-05-17T09:50:54Z",
+          "relation_version": 31
+        },
+        {
+          "name": "Bowang District",
+          "geometry_file": "bowang_osm.geojson",
+          "source": "OpenStreetMap via Nominatim",
+          "osm_object_url": "https://www.openstreetmap.org/relation/3260810",
+          "retrieval_url": "https://nominatim.openstreetmap.org/search?q=%E5%8D%9A%E6%9C%9B%E5%8C%BA%2C%E9%A9%AC%E9%9E%8D%E5%B1%B1%E5%B8%82%2C%E5%AE%89%E5%BE%BD%E7%9C%81%2C%E4%B8%AD%E5%9B%BD&format=jsonv2&polygon_geojson=1&limit=1",
+          "retrieved_utc": "2026-11-09T05:44:59.677844+00:00",
+          "crs": "WGS 84 longitude, latitude (EPSG:4326)",
+          "licence": "Open Database Licence 1.0 (ODbL)",
+          "licence_url": "https://www.openstreetmap.org/copyright",
+          "relation_last_edit_utc": "2024-05-17T09:50:54Z",
+          "relation_version": 20
+        }
+      ],
+      "original_source_file_label": "input/four_districts_osm.geojson",
+      "original_metadata_file_label": "input/DATA_PROVENANCE.json",
+      "working_file_is_translation_derivative": true
+    }
+  ],
+  "administrative_name_verification": [
+    {
+      "provider": "Nanjing Municipal Government / Local Chronicles Office",
+      "title": "Administrative Divisions and Population",
+      "page_url": "https://www.nanjing.gov.cn/zzb/njgl/csgk/qhrk_72673/202609/t20260929_5919738.html",
+      "publication_date": "2026-09-29",
+      "read_date": "2026-11-09",
+      "verified": "Nanjing is the capital of Jiangsu Province. Its subdivisions included Lishui and Gaochun Districts at the end of 2025.",
+      "use": "Used to verify names and administrative affiliation only, not boundary geometry."
+    },
+    {
+      "provider": "Jiangsu Provincial Government",
+      "title": "Provincial Notice on Adjusting Certain Administrative Divisions of Nanjing (Jiangsu Government Document No. 24 of 2013)",
+      "page_url": "https://www.js.gov.cn/art/2013/2/25/art_46143_2542513.html",
+      "publication_date": "2013-02-25",
+      "read_date": "2026-11-09",
+      "verified": "Lishui and Gaochun Counties were replaced by Lishui and Gaochun Districts of Nanjing.",
+      "use": "Used to verify standard administrative names."
+    },
+    {
+      "provider": "Nanjing Local Chronicles Compilation Committee Office",
+      "title": "Nanjing Yearbook 2025, Ma'anshan City entry",
+      "page_url": "https://dfz.nanjing.gov.cn/ztzl/njzj/njnj/202601/P020260225420229846064.pdf",
+      "download_url": "https://dfz.nanjing.gov.cn/ztzl/njzj/njnj/202601/P020260225420229846064.pdf",
+      "read_date": "2026-11-09",
+      "verified": "Ma'anshan is in Anhui Province and administers Dangtu County and Bowang District. The entry describes the position at the end of 2024.",
+      "use": "Used to verify administrative hierarchy and affiliation only, not boundary geometry."
+    },
+    {
+      "provider": "Jiangsu Qinhuai River Waterworks Management Office (jswater.org.cn)",
+      "title": "Shijiu Lake and Gucheng Lake",
+      "page_url": "https://qhh.jswater.org.cn/qhh/zjqh/lyjhhgk/art/2022/art_4671ea91c1ee4a29b24c974fe23c6e41.html",
+      "publication_date": "2019-04-18 (displayed publication date; the 2022 URL directory is not substituted for that date)",
+      "read_date": "2026-11-09",
+      "verified": "The lake overview describes the Jiangsu/Anhui setting and four county/district jurisdictions; the Shijiu section mentions Tianshengqiao and Xinqiao among connected waterways.",
+      "use": "Used for regional context and name checks. This page is not the geometry source and does not establish the complete hydrologic topology of all five labeled rivers."
+    }
+  ],
+  "limitations": [
+    "OSM is a collaborative map. These administrative boundaries have not been reconciled against officially certified boundaries.",
+    "The lake polygon is a conventional outline; survey year and observed water level are unavailable.",
+    "The input contains 153 river features (87 unnamed, 66 named). The upstream inventory describes a different file containing 134 named river features. Per-feature OSM IDs and versions are traceable; the original full-network query and exact extraction time are unavailable.",
+    "Only four county/district polygons are provided. Surrounding white space does not mean unadministered land or water. Higher-level names are placed within the supplied members and do not imply complete province/city boundaries.",
+    "River lines follow the open dataset. Hydrologic flow direction and network completeness have not been verified; no flow arrows are drawn."
+  ],
+  "processing": [
+    "The original private development inputs were preserved during initial preparation. They are identified by their recorded hashes; this public edition contains translated derived working files.",
+    "Initial preparation copied three GeoJSON files without geometry changes. The public English edition translates names and descriptive attributes, removes duplicate non-English tags and editor usernames, and preserves all geometry coordinates and OSM object IDs.",
+    "The renderer clips to the display extent and transforms EPSG:4326 to the selected UTM projection. A display mask hides river portions overlapping the Shijiu Lake polygon.",
+    "The province boundary is derived only from exact shared edges of the supplied Jiangsu/Anhui county/district polygons. Every administrative label denotes an area, not a government seat."
+  ],
+  "geometry_source_metadata_sha256": "4744601f571d71e95f821ebbac64352282093991882d27462078498e5f7709ea",
+  "english_edition": {
+    "prepared_date": "2026-11-09",
+    "language": "en",
+    "name_policy": "Proper names are transliterated into pinyin and generic feature-type words are translated into English. These working labels are not certified official English names.",
+    "original_snapshots_bundled": false,
+    "source_sha256_meaning": "Hashes of original development snapshots; working_sha256 identifies translated public files.",
+    "geometry_verification": [
+      {
+        "file": "data_work/four_districts_osm.geojson",
+        "feature_count": 4,
+        "empty_geometries": 0,
+        "invalid_geometries": 0,
+        "coordinates_unchanged": true,
+        "osm_ids_unchanged": true
+      },
+      {
+        "file": "data_work/shijiu_lake_osm.geojson",
+        "feature_count": 1,
+        "empty_geometries": 0,
+        "invalid_geometries": 0,
+        "coordinates_unchanged": true,
+        "osm_ids_unchanged": true
+      },
+      {
+        "file": "data_work/rivers_all_local_osm.geojson",
+        "feature_count": 153,
+        "empty_geometries": 0,
+        "invalid_geometries": 0,
+        "coordinates_unchanged": true,
+        "osm_ids_unchanged": true
+      }
+    ],
+    "changes": [
+      "Translated labels and descriptive metadata.",
+      "Removed duplicate original-language tags and per-edit usernames/user IDs; aggregate OSM attribution and object provenance remain.",
+      "Kept coordinates, OSM object IDs, edit versions and source URLs unchanged."
+    ]
+  }
+}

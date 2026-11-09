@@ -1,0 +1,12 @@
+{
+  "name": "river-lake-cartography-desktop",
+  "version": "1.0.0-preview.1",
+  "private": true,
+  "description": "Development-only DOM tests; not a runtime dependency",
+  "scripts": {
+    "test:ui": "node tests/test_frontend_dom.cjs"
+  },
+  "devDependencies": {
+    "jsdom": "31.0.0"
+  }
+}

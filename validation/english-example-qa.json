@@ -1,0 +1,873 @@
+{
+  "schema_version": 1,
+  "run_id": "20261109T134947938911Z",
+  "created_utc": "2026-11-09T13:49:47.938959+00:00",
+  "job_file": "<VALIDATION_ROOT>/example_309664/map_job.json",
+  "renderer_sha256": "ff66126d2912c2dd714e75a70f0fb39cce98dcec15a51176385dc6e9fad29df6",
+  "support_script_sha256": {
+    "check_environment.py": "442f29d264337c02f51df2f9e56a040d47d94d9d837fbe3bf48cd97d256dfb30",
+    "cartographic_labels.py": "98d245f03f3387b6555c75591bd60908282235c0ed0f4dd4907892e8296ba473"
+  },
+  "source_records_authority": "supplied_by_job_not_certified_by_renderer",
+  "status": "completed_with_warnings",
+  "layers": {
+    "lake": {
+      "provided": true,
+      "file": "<VALIDATION_ROOT>/example_309664/data_work/shijiu_lake_osm.geojson",
+      "source_record": {
+        "year": "Survey year not specified",
+        "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+        "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+        "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL 1.0 \u00b7 openstreetmap.org/copyright",
+        "source_name": "OpenStreetMap via Nominatim",
+        "source_url": "https://www.openstreetmap.org/relation/14305804",
+        "version": "Outer way 36808030 v20; last edited 2026-09-16. The edit date is not a survey year.",
+        "retrieved_utc": "2026-11-09T05:44:41.644994+00:00",
+        "notes": "Conventional lake outline; not a surveyed water surface at a specified water level or a statutory management boundary."
+      },
+      "source_crs_declared": "EPSG:4326",
+      "sha256": "b4520d17e82946ff52da6c8cb248686b7ef597bb61e7866df49833628084b3bd",
+      "bytes": 22346,
+      "feature_count": 1,
+      "accepted_feature_count": 1,
+      "empty_feature_indices": [],
+      "invalid_features": [],
+      "unnamed_feature_count": 0,
+      "name_field": "name",
+      "geometry_types": [
+        "Polygon"
+      ],
+      "visible_feature_count": 1
+    },
+    "rivers": {
+      "provided": true,
+      "file": "<VALIDATION_ROOT>/example_309664/data_work/rivers_all_local_osm.geojson",
+      "source_record": {
+        "year": "Survey year not specified",
+        "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+        "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+        "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL 1.0 \u00b7 openstreetmap.org/copyright",
+        "source_name": "OpenStreetMap via Overpass API",
+        "source_url": "https://overpass-api.de/api/interpreter",
+        "version": "Per-feature osm_meta records edit timestamps and versions. Available records do not establish the exact retrieval time for this complete river dataset.",
+        "notes": "The supplied dataset contains 153 river/channel centerlines, 87 unnamed. The upstream inventory refers to a different file with 134 named river lines. This example records the actual input OSM IDs; the original full-network query is unavailable. No flow direction or river width is inferred."
+      },
+      "source_crs_declared": "EPSG:4326",
+      "sha256": "24bc9333de53d3e4d50e6b9b72ba714b0817475693d035265d1f55b27fd3679c",
+      "bytes": 330551,
+      "feature_count": 153,
+      "accepted_feature_count": 153,
+      "empty_feature_indices": [],
+      "invalid_features": [],
+      "unnamed_feature_count": 87,
+      "name_field": "name",
+      "geometry_types": [
+        "LineString"
+      ],
+      "visible_feature_count": 153,
+      "drawn_feature_count": 152,
+      "mask_rivers_by_lakes": true,
+      "fully_masked_names": [
+        "Zhongliu River"
+      ]
+    },
+    "admin": {
+      "provided": true,
+      "file": "<VALIDATION_ROOT>/example_309664/data_work/four_districts_osm.geojson",
+      "source_record": {
+        "year": "Survey year not specified",
+        "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+        "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+        "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL 1.0 \u00b7 openstreetmap.org/copyright",
+        "source_name": "OpenStreetMap via Nominatim",
+        "source_url": "https://www.openstreetmap.org/relation/2147644",
+        "version": "Versions of the four county/district relations are recorded in sources.json; boundaries are not officially certified.",
+        "retrieved_utc": "2026-11-09T05:44:59.677844+00:00",
+        "notes": "Only four county/district polygons are supplied. Province and city area labels use unions of the supplied, correctly affiliated members; complete province and city boundaries are not reconstructed."
+      },
+      "source_crs_declared": "EPSG:4326",
+      "sha256": "6319393ebd6ca3d6d1f7ceb7eec0cdd06c1fc1525c01e300b41a5739a3be0669",
+      "bytes": 729790,
+      "feature_count": 4,
+      "accepted_feature_count": 4,
+      "empty_feature_indices": [],
+      "invalid_features": [],
+      "unnamed_feature_count": 0,
+      "name_field": "name",
+      "geometry_types": [
+        "MultiPolygon",
+        "Polygon"
+      ],
+      "visible_feature_count": 4
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "lake: The survey year is recorded as unknown; the retrieval date is not a survey date.",
+    "rivers: The survey year is recorded as unknown; the retrieval date is not a survey date.",
+    "admin: The survey year is recorded as unknown; the retrieval date is not a survey date."
+  ],
+  "outputs": [
+    {
+      "file": "<VALIDATION_ROOT>/example_309664/output/map.png",
+      "sha256": "eac897c86b181dd0b3b4c07defeb2bfccbd4fa7694a01b930f7dab843f462be9",
+      "kind": "map"
+    },
+    {
+      "file": "<VALIDATION_ROOT>/example_309664/output/map.svg",
+      "sha256": "9a7fcaee6d9d2957225c0d59a0cd0c9686e7f082031ce6edc99e0c886124f526",
+      "kind": "map"
+    }
+  ],
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "shapely": "2.2.0",
+    "pyproj": "3.8.0"
+  },
+  "manual_visual_review": {
+    "status": "pending",
+    "note": "Review the actual PNG. The application does not automatically mark manual visual review as passed."
+  },
+  "job_sha256": "eba64aefdff7a038224eb05e3e4d7485ca5c3d97b644064d8648a4281cc1dc99",
+  "requested_labels": {
+    "admin_labels": [
+      {
+        "name": "Anhui Province",
+        "level": "province",
+        "members": [
+          "Dangtu County",
+          "Bowang District"
+        ],
+        "position": [
+          118.59,
+          31.477
+        ]
+      },
+      {
+        "name": "Jiangsu Province",
+        "level": "province",
+        "members": [
+          "Lishui District",
+          "Gaochun District"
+        ],
+        "position": [
+          119.11,
+          31.628
+        ]
+      },
+      {
+        "name": "Ma'anshan City",
+        "level": "city",
+        "members": [
+          "Dangtu County",
+          "Bowang District"
+        ],
+        "position": [
+          118.59,
+          31.434
+        ]
+      },
+      {
+        "name": "Nanjing City",
+        "level": "city",
+        "members": [
+          "Lishui District",
+          "Gaochun District"
+        ],
+        "position": [
+          119.11,
+          31.585
+        ]
+      },
+      {
+        "name": "Dangtu County",
+        "level": "county",
+        "position": null
+      },
+      {
+        "name": "Bowang District",
+        "level": "county",
+        "position": [
+          118.755,
+          31.575
+        ]
+      },
+      {
+        "name": "Lishui District",
+        "level": "county",
+        "position": [
+          119.08,
+          31.475
+        ]
+      },
+      {
+        "name": "Gaochun District",
+        "level": "county",
+        "position": null
+      }
+    ],
+    "river_labels": [
+      {
+        "source_name": "Guxi River",
+        "display_name": "Guxi River",
+        "anchor_near": null,
+        "side": 1,
+        "font_size_pt": 10,
+        "gap_pt": 0.4,
+        "offset_pt": 8
+      },
+      {
+        "source_name": "Yunliang River",
+        "display_name": "Yunliang River",
+        "anchor_near": null,
+        "side": 1,
+        "font_size_pt": 10,
+        "gap_pt": 0.4,
+        "offset_pt": 8
+      },
+      {
+        "source_name": "Yanzhi River",
+        "display_name": "Yanzhi River",
+        "anchor_near": null,
+        "side": 1,
+        "font_size_pt": 10,
+        "gap_pt": 0.4,
+        "offset_pt": 8
+      },
+      {
+        "source_name": "Xinqiao River",
+        "display_name": "Xinqiao River",
+        "anchor_near": [
+          119.035,
+          31.518
+        ],
+        "side": 1,
+        "font_size_pt": 10,
+        "gap_pt": 0.4,
+        "offset_pt": 8
+      },
+      {
+        "source_name": "Guanxi River",
+        "display_name": "Guanxi River",
+        "anchor_near": null,
+        "side": 1,
+        "font_size_pt": 10,
+        "gap_pt": 0.4,
+        "offset_pt": 8
+      }
+    ],
+    "lake_labels": [
+      {
+        "name": "Shijiu Lake",
+        "position": [
+          118.922,
+          31.465
+        ],
+        "font_size_pt": 16
+      }
+    ]
+  },
+  "crs": {
+    "source": "EPSG:4326",
+    "render": "EPSG:32650",
+    "render_selection": "auto_utm_single_zone",
+    "render_wkt": "PROJCRS[\"WGS 84 / UTM zone 50N\",BASEGEOGCRS[\"WGS 84\",ENSEMBLE[\"World Geodetic System 1984 ensemble\",MEMBER[\"World Geodetic System 1984 (Transit)\"],MEMBER[\"World Geodetic System 1984 (G730)\"],MEMBER[\"World Geodetic System 1984 (G873)\"],MEMBER[\"World Geodetic System 1984 (G1150)\"],MEMBER[\"World Geodetic System 1984 (G1674)\"],MEMBER[\"World Geodetic System 1984 (G1762)\"],MEMBER[\"World Geodetic System 1984 (G2139)\"],MEMBER[\"World Geodetic System 1984 (G2296)\"],ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]],ENSEMBLEACCURACY[2.0]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"EPSG\",4326]],CONVERSION[\"UTM zone 50N\",METHOD[\"Transverse Mercator\",ID[\"EPSG\",9807]],PARAMETER[\"Latitude of natural origin\",0,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8801]],PARAMETER[\"Longitude of natural origin\",117,ANGLEUNIT[\"degree\",0.0174532925199433],ID[\"EPSG\",8802]],PARAMETER[\"Scale factor at natural origin\",0.9996,SCALEUNIT[\"unity\",1],ID[\"EPSG\",8805]],PARAMETER[\"False easting\",500000,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8806]],PARAMETER[\"False northing\",0,LENGTHUNIT[\"metre\",1],ID[\"EPSG\",8807]]],CS[Cartesian,2],AXIS[\"(E)\",east,ORDER[1],LENGTHUNIT[\"metre\",1]],AXIS[\"(N)\",north,ORDER[2],LENGTHUNIT[\"metre\",1]],USAGE[SCOPE[\"Navigation and medium accuracy spatial referencing.\"],AREA[\"Between 114\u00b0E and 120\u00b0E, northern hemisphere between equator and 84\u00b0N, onshore and offshore. Brunei. China. Hong Kong. Indonesia. Malaysia - East Malaysia - Sarawak. Mongolia. Philippines. Russian Federation. Taiwan.\"],BBOX[0,114,84,120]],ID[\"EPSG\",32650]]",
+    "projected_units": "metre",
+    "extent_wgs84": [
+      118.4,
+      31.29,
+      119.25,
+      31.68
+    ]
+  },
+  "font": {
+    "file": "<PROJECT_ROOT>/app/resources/fonts/NotoSansCJK-Regular.ttc",
+    "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+    "missing_glyphs": []
+  },
+  "output_request": {
+    "width_px": 3840,
+    "height_px": 2160,
+    "dpi": 240.0
+  },
+  "layout_canvas_dpi": 100.0,
+  "layout_canvas_size_px": [
+    1600,
+    900
+  ],
+  "derived_province_boundary": {
+    "basis": "exact_common_boundaries_of_supplied_admin_members",
+    "length_m": 72064.11174164758
+  },
+  "lake_labels": [
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        682605.0862616675,
+        3482736.5421973225
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        864.4795865977079,
+        395.9003465592512,
+        979.867086597708,
+        420.0503465592512
+      ],
+      "candidate_count_examined": 1,
+      "name": "Shijiu Lake",
+      "explicitly_requested": true
+    }
+  ],
+  "admin_labels": [
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        651039.1029326958,
+        3483561.943691164
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        407.0305073572829,
+        404.79842535181814,
+        596.1130073572829,
+        433.14842535181816
+      ],
+      "candidate_count_examined": 1,
+      "name": "Anhui Province",
+      "level": "province",
+      "style": {
+        "font_size_pt": 19.0,
+        "color": "#7A8991",
+        "weight": "normal",
+        "spacing": " "
+      },
+      "members": [
+        "Dangtu County",
+        "Bowang District"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        118.59,
+        31.477000000000004
+      ]
+    },
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        700121.7498206554,
+        3501136.4106991733
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        1048.6657222173758,
+        638.9697641896375,
+        1262.483222217376,
+        667.3197641896375
+      ],
+      "candidate_count_examined": 1,
+      "name": "Jiangsu Province",
+      "level": "province",
+      "style": {
+        "font_size_pt": 19.0,
+        "color": "#7A8991",
+        "weight": "normal",
+        "spacing": " "
+      },
+      "members": [
+        "Lishui District",
+        "Gaochun District"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        119.11,
+        31.628000000000004
+      ]
+    },
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        651108.1484603975,
+        3478795.2836596686
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        419.04300587873377,
+        343.38496796780674,
+        585.9405058787338,
+        367.5349679678067
+      ],
+      "candidate_count_examined": 1,
+      "name": "Ma'anshan City",
+      "level": "city",
+      "style": {
+        "font_size_pt": 16.5,
+        "color": "#71818B",
+        "weight": "normal",
+        "spacing": " "
+      },
+      "members": [
+        "Dangtu County",
+        "Bowang District"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        118.59,
+        31.434
+      ]
+    },
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        700213.8031301689,
+        3496369.0125226383
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        1090.5647883899592,
+        577.546471377206,
+        1223.037288389959,
+        601.6964713772061
+      ],
+      "candidate_count_examined": 1,
+      "name": "Nanjing City",
+      "level": "city",
+      "style": {
+        "font_size_pt": 16.5,
+        "color": "#71818B",
+        "weight": "normal",
+        "spacing": " "
+      },
+      "members": [
+        "Lishui District",
+        "Gaochun District"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        119.11,
+        31.584999999999994
+      ]
+    },
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        643834.3778903724,
+        3489806.6001760075
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        328.75350373931667,
+        490.630476181391,
+        482.3910037393167,
+        513.7304761813909
+      ],
+      "candidate_count_examined": 14,
+      "name": "Dangtu County",
+      "level": "county",
+      "style": {
+        "font_size_pt": 15.5,
+        "color": "#536A77",
+        "weight": "bold",
+        "spacing": ""
+      },
+      "members": [
+        "Dangtu County"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        118.51508680331058,
+        31.534242125026534
+      ]
+    },
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        666541.0555588878,
+        3494665.025675708
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        627.1015866637771,
+        555.3666643906938,
+        789.1540866637771,
+        578.4666643906937
+      ],
+      "candidate_count_examined": 1,
+      "name": "Bowang District",
+      "level": "county",
+      "style": {
+        "font_size_pt": 15.5,
+        "color": "#536A77",
+        "weight": "bold",
+        "spacing": ""
+      },
+      "members": [
+        "Bowang District"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        118.755,
+        31.575000000000003
+      ]
+    },
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        697598.2143860224,
+        3484119.0234484547
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        1052.1433236037578,
+        414.84624577333597,
+        1191.755823603758,
+        437.946245773336
+      ],
+      "candidate_count_examined": 1,
+      "name": "Lishui District",
+      "level": "county",
+      "style": {
+        "font_size_pt": 15.5,
+        "color": "#536A77",
+        "weight": "bold",
+        "spacing": ""
+      },
+      "members": [
+        "Lishui District"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        119.08,
+        31.474999999999994
+      ]
+    },
+    {
+      "status": "placed",
+      "anchor_projected_xy": [
+        699070.1351468271,
+        3473841.6294910945
+      ],
+      "whole_text_inside_visible_area": true,
+      "text_bounds_pixels": [
+        1056.1372113619166,
+        277.9049034463125,
+        1226.9872113619165,
+        301.00490344631254
+      ],
+      "candidate_count_examined": 1,
+      "name": "Gaochun District",
+      "level": "county",
+      "style": {
+        "font_size_pt": 15.5,
+        "color": "#536A77",
+        "weight": "bold",
+        "spacing": ""
+      },
+      "members": [
+        "Gaochun District"
+      ],
+      "geometry_basis": "supplied_visible_admin_features",
+      "position_wgs84": [
+        119.09342442376008,
+        31.38208050342317
+      ]
+    }
+  ],
+  "river_labels": [
+    {
+      "name": "Guxi River",
+      "status": "placed",
+      "continuous_line_index": 0,
+      "layout": "latin_words_along_visible_river",
+      "word_count": 2,
+      "reading_order": "left_to_right",
+      "reading_axis_steps_pixels": [
+        40.55944630211172
+      ],
+      "reading_order_measured_monotone": true,
+      "word_rotations_degrees": [
+        -20.04706712747829,
+        19.62664284964631
+      ],
+      "leader_line_count": 0,
+      "font_size_pt": 10.0,
+      "gap_pt": 0.4,
+      "offset_pt": 8.0,
+      "side": -1,
+      "source_anchor_projected_xy": [
+        [
+          648759.5495856076,
+          3487813.165877678
+        ],
+        [
+          651237.578051759,
+          3487690.522560792
+        ]
+      ],
+      "letter_positions_projected_xy": [
+        [
+          648473.7006723036,
+          3487029.80529677
+        ],
+        [
+          651517.6711873856,
+          3486905.0855892072
+        ]
+      ],
+      "source_anchor_max_distance_projected": 3.6565477014603416e-10,
+      "source_name": "Guxi River",
+      "projected_distance_unit": "metre"
+    },
+    {
+      "name": "Yunliang River",
+      "status": "placed",
+      "continuous_line_index": 0,
+      "layout": "latin_words_along_visible_river",
+      "word_count": 2,
+      "reading_order": "bottom_to_top",
+      "reading_axis_steps_pixels": [
+        46.981143363623545
+      ],
+      "reading_order_measured_monotone": true,
+      "word_rotations_degrees": [
+        59.55945635024629,
+        78.46287959477826
+      ],
+      "leader_line_count": 0,
+      "font_size_pt": 10.0,
+      "gap_pt": 0.4,
+      "offset_pt": 8.0,
+      "side": -1,
+      "source_anchor_projected_xy": [
+        [
+          666266.849444591,
+          3468929.442405548
+        ],
+        [
+          667797.1445283483,
+          3472199.655403316
+        ]
+      ],
+      "letter_positions_projected_xy": [
+        [
+          666985.7874687356,
+          3468506.9598397585
+        ],
+        [
+          668614.1806948372,
+          3472032.876197159
+        ]
+      ],
+      "source_anchor_max_distance_projected": 1.3565228108139117e-10,
+      "source_name": "Yunliang River",
+      "projected_distance_unit": "metre"
+    },
+    {
+      "name": "Yanzhi River",
+      "status": "placed",
+      "continuous_line_index": 0,
+      "layout": "latin_words_along_visible_river",
+      "word_count": 2,
+      "reading_order": "bottom_to_top",
+      "reading_axis_steps_pixels": [
+        41.07071631999656
+      ],
+      "reading_order_measured_monotone": true,
+      "word_rotations_degrees": [
+        80.11602863766134,
+        86.89257819192312
+      ],
+      "leader_line_count": 0,
+      "font_size_pt": 10.0,
+      "gap_pt": 0.4,
+      "offset_pt": 8.0,
+      "side": -1,
+      "source_anchor_projected_xy": [
+        [
+          687110.0664009406,
+          3496297.3991401615
+        ],
+        [
+          687837.7597379099,
+          3499281.8044103975
+        ]
+      ],
+      "letter_positions_projected_xy": [
+        [
+          687931.5738991045,
+          3496154.2599372226
+        ],
+        [
+          688670.4181664649,
+          3499236.6010663435
+        ]
+      ],
+      "source_anchor_max_distance_projected": 1.705392868287597e-11,
+      "source_name": "Yanzhi River",
+      "projected_distance_unit": "metre"
+    },
+    {
+      "name": "Xinqiao River",
+      "status": "placed",
+      "continuous_line_index": 0,
+      "layout": "latin_words_along_visible_river",
+      "word_count": 2,
+      "reading_order": "left_to_right",
+      "reading_axis_steps_pixels": [
+        41.660213733235196
+      ],
+      "reading_order_measured_monotone": true,
+      "word_rotations_degrees": [
+        18.04754068471988,
+        18.912549323827403
+      ],
+      "leader_line_count": 0,
+      "font_size_pt": 10.0,
+      "gap_pt": 0.4,
+      "offset_pt": 8.0,
+      "side": 1,
+      "source_anchor_projected_xy": [
+        [
+          691864.1969069274,
+          3488902.7363745584
+        ],
+        [
+          695002.7196524611,
+          3489979.9898210936
+        ]
+      ],
+      "letter_positions_projected_xy": [
+        [
+          691605.8544619889,
+          3489695.593601366
+        ],
+        [
+          694732.4371404457,
+          3490768.856580855
+        ]
+      ],
+      "source_anchor_max_distance_projected": 5.722438536695761e-10,
+      "source_name": "Xinqiao River",
+      "projected_distance_unit": "metre"
+    },
+    {
+      "name": "Guanxi River",
+      "status": "placed",
+      "continuous_line_index": 0,
+      "layout": "latin_words_along_visible_river",
+      "word_count": 2,
+      "reading_order": "left_to_right",
+      "reading_axis_steps_pixels": [
+        45.948991775218815
+      ],
+      "reading_order_measured_monotone": true,
+      "word_rotations_degrees": [
+        -12.63610962596753,
+        15.484316590375478
+      ],
+      "leader_line_count": 0,
+      "font_size_pt": 10.0,
+      "gap_pt": 0.4,
+      "offset_pt": 8.0,
+      "side": -1,
+      "source_anchor_projected_xy": [
+        [
+          681356.0250382303,
+          3464649.6783045
+        ],
+        [
+          684399.4337206447,
+          3464744.052441403
+        ]
+      ],
+      "letter_positions_projected_xy": [
+        [
+          681173.6059172866,
+          3463835.9912238163
+        ],
+        [
+          684622.0597033588,
+          3463940.43494982
+        ]
+      ],
+      "source_anchor_max_distance_projected": 4.3912165441250304e-10,
+      "source_name": "Guanxi River",
+      "projected_distance_unit": "metre"
+    }
+  ],
+  "source_attribution_full_text": "Sources: \u00a9 OpenStreetMap contributors \u00b7 ODbL 1.0 \u00b7 openstreetmap.org/copyright (Survey year not specified)",
+  "source_attribution_required_lines": 1,
+  "source_nature_full_text": "Data status: Collaborative open data; reference mapping, not certified boundaries",
+  "layout_checks": {
+    "legend_inside_map": true,
+    "legend_lower_left": true,
+    "legend_entries": [
+      "Lake outline",
+      "River / canal",
+      "Province boundary",
+      "Administrative boundary"
+    ],
+    "text_violations": [],
+    "text_overlap_pairs": [],
+    "admin_footprints": [
+      {
+        "name": "Anhui Province",
+        "whole_text_inside_visible_area": true
+      },
+      {
+        "name": "Jiangsu Province",
+        "whole_text_inside_visible_area": true
+      },
+      {
+        "name": "Ma'anshan City",
+        "whole_text_inside_visible_area": true
+      },
+      {
+        "name": "Nanjing City",
+        "whole_text_inside_visible_area": true
+      },
+      {
+        "name": "Dangtu County",
+        "whole_text_inside_visible_area": true
+      },
+      {
+        "name": "Bowang District",
+        "whole_text_inside_visible_area": true
+      },
+      {
+        "name": "Lishui District",
+        "whole_text_inside_visible_area": true
+      },
+      {
+        "name": "Gaochun District",
+        "whole_text_inside_visible_area": true
+      }
+    ],
+    "text_overlap_geometry": "rotated_text_rectangles_in_display_pixels",
+    "river_leader_line_count": 0,
+    "north_arrow_basis": "projected_true_north_at_arrow_location",
+    "scale": {
+      "label_distance_m": 10000,
+      "ellipsoidal_distance_m": 9999.999999998168,
+      "relative_error": 1.8317223293706774e-13,
+      "tick_label_count": 3,
+      "tick_label_overlap": false
+    }
+  },
+  "label_counts": {
+    "requested_admin": 8,
+    "placed_admin": 8,
+    "requested_rivers": 5,
+    "placed_rivers": 5,
+    "requested_lakes": 1,
+    "placed_requested_lakes": 1,
+    "automatic_lake_label_candidates": 0,
+    "placed_lake_labels_total": 1
+  },
+  "image_size_px_measured": [
+    3840,
+    2160
+  ],
+  "missing_or_unplaced_labels": []
+}

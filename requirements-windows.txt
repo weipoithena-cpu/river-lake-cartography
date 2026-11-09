@@ -1,0 +1,7 @@
+# Pinned portable-runtime dependencies for CPython 3.14 x86-64.
+# Native Windows execution is a separate gate, recorded in BUILD_MANIFEST.json.
+numpy==2.5.4
+matplotlib==3.11.2
+shapely==2.2.0
+pyproj==3.8.0
+pillow==12.0.0

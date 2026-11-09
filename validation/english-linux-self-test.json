@@ -1,0 +1,45 @@
+{
+  "app_version": "1.0.0-preview.1",
+  "platform": "linux",
+  "executable": "<LINUX_PYTHON>/bin/python",
+  "environment": {
+    "python": "3.12.14",
+    "executable": "<LINUX_PYTHON>/bin/python",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "packages": {
+      "numpy": "2.3.5",
+      "matplotlib": "3.10.8",
+      "shapely": "2.2.0",
+      "pyproj": "3.8.0"
+    },
+    "errors": [],
+    "projection_roundtrip_error_degrees": 1.7763568394002505e-15,
+    "font_path": "<PROJECT_ROOT>/app/resources/fonts/NotoSansCJK-Regular.ttc",
+    "font_render_buffer_shape": [
+      80,
+      160,
+      4
+    ],
+    "status": "ready"
+  },
+  "status": "passed",
+  "qa_status": "completed_with_warnings",
+  "label_counts": {
+    "requested_admin": 8,
+    "placed_admin": 8,
+    "requested_rivers": 5,
+    "placed_rivers": 5,
+    "requested_lakes": 1,
+    "placed_requested_lakes": 1,
+    "automatic_lake_label_candidates": 0,
+    "placed_lake_labels_total": 1
+  },
+  "errors": [],
+  "image_size": [
+    3840,
+    2160
+  ],
+  "output_dir": "<VALIDATION_ROOT>/example_309664",
+  "record_kind": "Actual Linux runtime verification of the English preview",
+  "native_windows_execution": "not_performed"
+}

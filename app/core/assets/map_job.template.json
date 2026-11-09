@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "title": "Rivers, Lakes and Surrounding Administrative Areas",
+  "subtitle": "Local thematic base map",
+  "extent_wgs84": null,
+  "source_crs": "EPSG:4326",
+  "render_crs": "auto_utm",
+  "lake_file": "data/lakes.geojson",
+  "rivers_file": "data/rivers.geojson",
+  "admin_file": "data/admin.geojson",
+  "name_fields": {
+    "lake": "name",
+    "rivers": "name",
+    "admin": "name"
+  },
+  "mask_rivers_by_lakes": true,
+  "lake_labels": [
+    {
+      "name": "<Principal lake name>",
+      "position": null
+    }
+  ],
+  "admin_labels": [
+    {
+      "name": "<Full administrative-area name>",
+      "level": "county",
+      "position": null
+    }
+  ],
+  "river_labels": [
+    {
+      "source_name": "<Source river name>",
+      "display_name": "<Display river name>",
+      "anchor_near": null,
+      "side": 1
+    }
+  ],
+  "source_records": {
+    "lake": {
+      "source_name": "<Actual provider>",
+      "source_url": "<Source URL or verifiable institutional file reference>",
+      "year": "<Actual data year or explicitly not specified>",
+      "license": "<Specific license or use conditions>",
+      "authority_status": "<Verified authority status or explicitly unverified>"
+    },
+    "rivers": {
+      "source_name": "<Actual provider>",
+      "source_url": "<Source URL or verifiable institutional file reference>",
+      "year": "<Actual data year or explicitly not specified>",
+      "license": "<Specific license or use conditions>",
+      "authority_status": "<Verified authority status or explicitly unverified>"
+    },
+    "admin": {
+      "source_name": "<Actual provider>",
+      "source_url": "<Source URL or verifiable institutional file reference>",
+      "year": "<Actual data year or explicitly not specified>",
+      "license": "<Specific license or use conditions>",
+      "authority_status": "<Verified authority status or explicitly unverified>"
+    }
+  },
+  "font_path": null,
+  "output": {
+    "width_px": 3840,
+    "height_px": 2160,
+    "dpi": 240
+  }
+}

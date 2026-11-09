@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "documents": [
+    {
+      "name": "map-review-2019.pdf",
+      "url": "https://www.mfa.gov.cn/wjb_673085/zzjg_673183/bjhysws_674671/bhflfg/dtdmxgfl/202303/P020230313586143347764.pdf",
+      "bytes": 170066,
+      "sha256": "009e32b821119ad872115b0060133b89798d25438d62f6ce38de2495620ccb73",
+      "status": "externally_referenced_not_bundled",
+      "hash_scope": "Original document downloaded during the 2026-11-09 research, not a file included in this public English edition."
+    },
+    {
+      "name": "public-map-content-2023.pdf",
+      "url": "https://www.fmprc.gov.cn/web/wjb_673085/zzjg_673183/bjhysws_674671/bhflfg/dtdmxgfl/202303/P020230313585504979937.pdf",
+      "bytes": 211963,
+      "sha256": "3a3bc9dd76a0edf7ca9248965c60a4082ce5aac637461b3e1001103e817855d8",
+      "status": "externally_referenced_not_bundled",
+      "hash_scope": "Original document downloaded during the 2026-11-09 research, not a file included in this public English edition."
+    }
+  ],
+  "record_type": "Historical download receipts; original-language PDFs are externally linked and are not bundled in this English release."
+}

@@ -1,0 +1,14 @@
+Validate the fully extracted River Lake Cartography portable application on this Windows computer, and fix concrete problems you find.
+
+Locate RiverLakeCartography.exe, app\main.py, runtime\python.exe and BUILD_MANIFEST.json in the same portable folder. Read README.md and VALIDATION.md. The target is Windows 10/11 x64.
+
+1. Run the actual RiverLakeCartography.exe with --self-test --output-dir <a new acceptance-output directory>. Use PowerShell Start-Process -Wait -PassThru to wait reliably and capture the exit code.
+2. Read self_test_report.json. Require status=passed and errors=[]. Confirm dependency imports, font rendering and projection round trips.
+3. Open the generated PNG and SVG. Check all configured river, administrative and lake labels against map_job.json and qa.json, along with the lower-left legend, scale bar, readable text and 3840 by 2160 image size.
+4. Start the actual executable normally. In the local browser, test the built-in example, PNG and SVG downloads, complete project ZIP download, saved-project reopening and title changes followed by rerendering. Record whether these actions were actually performed.
+5. Confirm that the application uses its bundled Python interpreter and the current user's Documents folder. It must not depend on a previously installed skill or an unrelated Python virtual environment.
+6. If internet access is available, try a second small lake or river area. Distinguish network-service failures and incomplete source data from local application defects.
+7. Preserve error reports before fixing app source. Keep the project's river-label, administrative-label and lower-left-legend requirements. Rerun affected tests and rebuild with build_tools\build_windows.ps1.
+8. Report the actual executable and embedded Python paths, tested versions, exit codes, evidence files, final distributable ZIP path and SHA-256. Mark every check that was not run as not performed.
+
+Perform the checks and complete feasible fixes. If Windows permissions, network access or organizational policy block an action, record the exact cause without weakening system security settings. Never mark a simulated or static check as a native Windows execution check.

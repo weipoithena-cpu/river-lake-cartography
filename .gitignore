@@ -1,0 +1,38 @@
+# Local environments and generated outputs
+.venv/
+venv/
+.build-venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build_validation/
+validation/local/
+validation/ci/
+*.log
+*.tmp
+*.download
+
+# Toolchains and cached downloads are not project source
+build_tools/downloads/
+build_tools/host_tools/
+build_tools/host_wine/
+build_tools/wine_prefix/
+*.pdb
+
+# Recreated from the exact upstream URL and hash by build_tools/fetch_font.py.
+# Portable and source ZIP distributions still include the verified font.
+app/resources/fonts/*.ttc
+
+# Local configuration and private task data
+.env
+.env.*
+!.env.example
+projects/
+user_data/
+.DS_Store
+Thumbs.db

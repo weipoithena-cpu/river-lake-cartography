@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "title": "Shijiu Lake: Waterways and Administrative Areas",
+  "subtitle": "Open-data example | Lake, rivers and portions of four counties/districts",
+  "extent_wgs84": [
+    118.4,
+    31.29,
+    119.25,
+    31.68
+  ],
+  "source_crs": "EPSG:4326",
+  "render_crs": "auto_utm",
+  "lake_file": "data_work/shijiu_lake_osm.geojson",
+  "rivers_file": "data_work/rivers_all_local_osm.geojson",
+  "admin_file": "data_work/four_districts_osm.geojson",
+  "name_fields": {
+    "lake": "name",
+    "rivers": "name",
+    "admin": "name"
+  },
+  "mask_rivers_by_lakes": true,
+  "lake_labels": [
+    {
+      "name": "Shijiu Lake",
+      "position": [
+        118.922,
+        31.465
+      ],
+      "font_size_pt": 16
+    }
+  ],
+  "admin_labels": [
+    {
+      "name": "Anhui Province",
+      "level": "province",
+      "members": [
+        "Dangtu County",
+        "Bowang District"
+      ],
+      "position": [
+        118.59,
+        31.477
+      ]
+    },
+    {
+      "name": "Jiangsu Province",
+      "level": "province",
+      "members": [
+        "Lishui District",
+        "Gaochun District"
+      ],
+      "position": [
+        119.11,
+        31.628
+      ]
+    },
+    {
+      "name": "Ma'anshan City",
+      "level": "city",
+      "members": [
+        "Dangtu County",
+        "Bowang District"
+      ],
+      "position": [
+        118.59,
+        31.434
+      ]
+    },
+    {
+      "name": "Nanjing City",
+      "level": "city",
+      "members": [
+        "Lishui District",
+        "Gaochun District"
+      ],
+      "position": [
+        119.11,
+        31.585
+      ]
+    },
+    {
+      "name": "Dangtu County",
+      "level": "county",
+      "position": null
+    },
+    {
+      "name": "Bowang District",
+      "level": "county",
+      "position": [
+        118.755,
+        31.575
+      ]
+    },
+    {
+      "name": "Lishui District",
+      "level": "county",
+      "position": [
+        119.08,
+        31.475
+      ]
+    },
+    {
+      "name": "Gaochun District",
+      "level": "county",
+      "position": null
+    }
+  ],
+  "river_labels": [
+    {
+      "source_name": "Guxi River",
+      "display_name": "Guxi River",
+      "anchor_near": null,
+      "side": 1,
+      "font_size_pt": 10,
+      "gap_pt": 0.4,
+      "offset_pt": 8
+    },
+    {
+      "source_name": "Yunliang River",
+      "display_name": "Yunliang River",
+      "anchor_near": null,
+      "side": 1,
+      "font_size_pt": 10,
+      "gap_pt": 0.4,
+      "offset_pt": 8
+    },
+    {
+      "source_name": "Yanzhi River",
+      "display_name": "Yanzhi River",
+      "anchor_near": null,
+      "side": 1,
+      "font_size_pt": 10,
+      "gap_pt": 0.4,
+      "offset_pt": 8
+    },
+    {
+      "source_name": "Xinqiao River",
+      "display_name": "Xinqiao River",
+      "anchor_near": [
+        119.035,
+        31.518
+      ],
+      "side": 1,
+      "font_size_pt": 10,
+      "gap_pt": 0.4,
+      "offset_pt": 8
+    },
+    {
+      "source_name": "Guanxi River",
+      "display_name": "Guanxi River",
+      "anchor_near": null,
+      "side": 1,
+      "font_size_pt": 10,
+      "gap_pt": 0.4,
+      "offset_pt": 8
+    }
+  ],
+  "source_records": {
+    "lake": {
+      "year": "Survey year not specified",
+      "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+      "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+      "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL 1.0 \u00b7 openstreetmap.org/copyright",
+      "source_name": "OpenStreetMap via Nominatim",
+      "source_url": "https://www.openstreetmap.org/relation/14305804",
+      "version": "Outer way 36808030 v20; last edited 2026-09-16. The edit date is not a survey year.",
+      "retrieved_utc": "2026-11-09T05:44:41.644994+00:00",
+      "notes": "Conventional lake outline; not a surveyed water surface at a specified water level or a statutory management boundary."
+    },
+    "admin": {
+      "year": "Survey year not specified",
+      "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+      "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+      "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL 1.0 \u00b7 openstreetmap.org/copyright",
+      "source_name": "OpenStreetMap via Nominatim",
+      "source_url": "https://www.openstreetmap.org/relation/2147644",
+      "version": "Versions of the four county/district relations are recorded in sources.json; boundaries are not officially certified.",
+      "retrieved_utc": "2026-11-09T05:44:59.677844+00:00",
+      "notes": "Only four county/district polygons are supplied. Province and city area labels use unions of the supplied, correctly affiliated members; complete province and city boundaries are not reconstructed."
+    },
+    "rivers": {
+      "year": "Survey year not specified",
+      "license": "Open Database Licence 1.0 (ODbL); https://www.openstreetmap.org/copyright",
+      "authority_status": "Collaborative open data; reference mapping, not certified boundaries",
+      "attribution": "\u00a9 OpenStreetMap contributors \u00b7 ODbL 1.0 \u00b7 openstreetmap.org/copyright",
+      "source_name": "OpenStreetMap via Overpass API",
+      "source_url": "https://overpass-api.de/api/interpreter",
+      "version": "Per-feature osm_meta records edit timestamps and versions. Available records do not establish the exact retrieval time for this complete river dataset.",
+      "notes": "The supplied dataset contains 153 river/channel centerlines, 87 unnamed. The upstream inventory refers to a different file with 134 named river lines. This example records the actual input OSM IDs; the original full-network query is unavailable. No flow direction or river width is inferred."
+    }
+  },
+  "font_path": null,
+  "output": {
+    "width_px": 3840,
+    "height_px": 2160,
+    "dpi": 240
+  }
+}

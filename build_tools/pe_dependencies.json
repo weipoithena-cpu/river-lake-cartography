@@ -1,0 +1,2056 @@
+{
+  "binary_count": 104,
+  "external_imports": {
+    "api-ms-win-crt-environment-l1-1-0.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/python314.dll",
+      "runtime/pyexpat.pyd",
+      "runtime/libtommath.dll",
+      "runtime/libssl-3.dll",
+      "runtime/libcrypto-3.dll",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/pyproj.libs/jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_umath_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_simd.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-heap-l1-1-0.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/python314.dll",
+      "runtime/pyexpat.pyd",
+      "runtime/_bz2.pyd",
+      "runtime/_wmi.pyd",
+      "runtime/vcruntime140.dll",
+      "runtime/_lzma.pyd",
+      "runtime/vcruntime140_1.dll",
+      "runtime/pythonw.exe",
+      "runtime/libtommath.dll",
+      "runtime/python.exe",
+      "runtime/libssl-3.dll",
+      "runtime/_decimal.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/sqlite3.dll",
+      "runtime/_zstd.pyd",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_webp.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/sqlite3-9415ebc42378ab15b741623972c45846.dll",
+      "runtime/Lib/site-packages/pyproj.libs/zlib1-985e9fefa27bf900be8e4df7dcc97287.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/pyproj.libs/jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+      "runtime/Lib/site-packages/pyproj.libs/liblzma-3c4c8780fcad6ce56344d2b5594bda5b.dll",
+      "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/lib.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/_geometry_helpers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_transformer.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/database.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_context.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_image.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_path.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_backend_agg.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-math-l1-1-0.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/python314.dll",
+      "runtime/pythonw.exe",
+      "runtime/python.exe",
+      "runtime/_decimal.pyd",
+      "runtime/sqlite3.dll",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingmath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_webp.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_geod.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_image.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_path.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/pens/momentsPen.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/qu2cu/qu2cu.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/cu2qu/cu2qu.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/misc/bezierTools.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_umath_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_bounded_integers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_common.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/mtrand.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_backend_agg.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-private-l1-1-0.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/libtommath.dll",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll"
+    ],
+    "api-ms-win-crt-runtime-l1-1-0.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/python314.dll",
+      "runtime/pyexpat.pyd",
+      "runtime/_bz2.pyd",
+      "runtime/_elementtree.pyd",
+      "runtime/_wmi.pyd",
+      "runtime/_ctypes.pyd",
+      "runtime/vcruntime140.dll",
+      "runtime/_socket.pyd",
+      "runtime/_lzma.pyd",
+      "runtime/vcruntime140_1.dll",
+      "runtime/_queue.pyd",
+      "runtime/pythonw.exe",
+      "runtime/_zoneinfo.pyd",
+      "runtime/libtommath.dll",
+      "runtime/_ssl.pyd",
+      "runtime/_remote_debugging.pyd",
+      "runtime/python.exe",
+      "runtime/_hashlib.pyd",
+      "runtime/_asyncio.pyd",
+      "runtime/libssl-3.dll",
+      "runtime/select.pyd",
+      "runtime/_decimal.pyd",
+      "runtime/_multiprocessing.pyd",
+      "runtime/unicodedata.pyd",
+      "runtime/winsound.pyd",
+      "runtime/_overlapped.pyd",
+      "runtime/_sqlite3.pyd",
+      "runtime/_uuid.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/libffi-8.dll",
+      "runtime/sqlite3.dll",
+      "runtime/_zstd.pyd",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingmorph.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingmath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_webp.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/sqlite3-9415ebc42378ab15b741623972c45846.dll",
+      "runtime/Lib/site-packages/pyproj.libs/zlib1-985e9fefa27bf900be8e4df7dcc97287.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/pyproj.libs/jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+      "runtime/Lib/site-packages/pyproj.libs/liblzma-3c4c8780fcad6ce56344d2b5594bda5b.dll",
+      "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/lib.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/_geometry_helpers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/_geos.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_version.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_geod.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_transformer.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_network.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/database.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/list.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_context.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_crs.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_compat.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_sync.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_image.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_path.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/feaLib/lexer.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/pens/momentsPen.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/qu2cu/qu2cu.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/cu2qu/cu2qu.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/misc/bezierTools.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/varLib/iup.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/linalg/lapack_lite.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_operand_flag_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_rational_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_umath_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_struct_ufunc_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_simd.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_philox.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_bounded_integers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_mt19937.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_sfc64.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_common.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_pcg64.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/mtrand.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/bit_generator.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_backend_agg.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-stdio-l1-1-0.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/python314.dll",
+      "runtime/pyexpat.pyd",
+      "runtime/_bz2.pyd",
+      "runtime/_ctypes.pyd",
+      "runtime/vcruntime140.dll",
+      "runtime/_socket.pyd",
+      "runtime/pythonw.exe",
+      "runtime/libtommath.dll",
+      "runtime/_ssl.pyd",
+      "runtime/python.exe",
+      "runtime/_decimal.pyd",
+      "runtime/unicodedata.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/_zstd.pyd",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_webp.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/zlib1-985e9fefa27bf900be8e4df7dcc97287.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/pyproj.libs/jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+      "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/lib.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/_geometry_helpers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_rational_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-string-l1-1-0.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/python314.dll",
+      "runtime/pyexpat.pyd",
+      "runtime/_elementtree.pyd",
+      "runtime/_wmi.pyd",
+      "runtime/_ctypes.pyd",
+      "runtime/vcruntime140.dll",
+      "runtime/_socket.pyd",
+      "runtime/vcruntime140_1.dll",
+      "runtime/libtommath.dll",
+      "runtime/_ssl.pyd",
+      "runtime/_remote_debugging.pyd",
+      "runtime/_hashlib.pyd",
+      "runtime/libssl-3.dll",
+      "runtime/_decimal.pyd",
+      "runtime/unicodedata.pyd",
+      "runtime/_overlapped.pyd",
+      "runtime/_sqlite3.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/sqlite3.dll",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/sqlite3-9415ebc42378ab15b741623972c45846.dll",
+      "runtime/Lib/site-packages/pyproj.libs/zlib1-985e9fefa27bf900be8e4df7dcc97287.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/pyproj.libs/jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+      "runtime/Lib/site-packages/pyproj.libs/liblzma-3c4c8780fcad6ce56344d2b5594bda5b.dll",
+      "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/_geometry_helpers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_image.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_path.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_rational_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_umath_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_simd.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_backend_agg.cp314-win_amd64.pyd"
+    ],
+    "kernel32.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/python314.dll",
+      "runtime/pyexpat.pyd",
+      "runtime/_bz2.pyd",
+      "runtime/_elementtree.pyd",
+      "runtime/_wmi.pyd",
+      "runtime/_ctypes.pyd",
+      "runtime/vcruntime140.dll",
+      "runtime/_socket.pyd",
+      "runtime/_lzma.pyd",
+      "runtime/vcruntime140_1.dll",
+      "runtime/_queue.pyd",
+      "runtime/pythonw.exe",
+      "runtime/_zoneinfo.pyd",
+      "runtime/libtommath.dll",
+      "runtime/_ssl.pyd",
+      "runtime/_remote_debugging.pyd",
+      "runtime/python.exe",
+      "runtime/_hashlib.pyd",
+      "runtime/_asyncio.pyd",
+      "runtime/libssl-3.dll",
+      "runtime/select.pyd",
+      "runtime/_decimal.pyd",
+      "runtime/_multiprocessing.pyd",
+      "runtime/unicodedata.pyd",
+      "runtime/winsound.pyd",
+      "runtime/_overlapped.pyd",
+      "runtime/_sqlite3.pyd",
+      "runtime/_uuid.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/libffi-8.dll",
+      "runtime/sqlite3.dll",
+      "runtime/_zstd.pyd",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingmorph.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingmath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_webp.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/sqlite3-9415ebc42378ab15b741623972c45846.dll",
+      "runtime/Lib/site-packages/pyproj.libs/zlib1-985e9fefa27bf900be8e4df7dcc97287.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/pyproj.libs/jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+      "runtime/Lib/site-packages/pyproj.libs/liblzma-3c4c8780fcad6ce56344d2b5594bda5b.dll",
+      "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/lib.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/_geometry_helpers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely/_geos.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_version.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_geod.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_transformer.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_network.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/database.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/list.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_context.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_crs.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_compat.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/pyproj/_sync.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_image.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_path.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/feaLib/lexer.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/pens/momentsPen.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/qu2cu/qu2cu.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/cu2qu/cu2qu.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/misc/bezierTools.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/fontTools/varLib/iup.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/linalg/lapack_lite.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_operand_flag_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_rational_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_umath_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_struct_ufunc_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_simd.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_philox.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_bounded_integers.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_mt19937.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_sfc64.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_common.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/_pcg64.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/mtrand.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/random/bit_generator.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_backend_agg.cp314-win_amd64.pyd"
+    ],
+    "user32.dll": [
+      "RiverLakeCartography.exe",
+      "runtime/winsound.pyd",
+      "runtime/libcrypto-3.dll",
+      "build_tools/RiverLakeCartography.exe",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd"
+    ],
+    "advapi32.dll": [
+      "runtime/python314.dll",
+      "runtime/libtommath.dll",
+      "runtime/libcrypto-3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll"
+    ],
+    "api-ms-win-core-path-l1-1-0.dll": [
+      "runtime/python314.dll"
+    ],
+    "api-ms-win-crt-conio-l1-1-0.dll": [
+      "runtime/python314.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll"
+    ],
+    "api-ms-win-crt-convert-l1-1-0.dll": [
+      "runtime/python314.dll",
+      "runtime/pyexpat.pyd",
+      "runtime/vcruntime140.dll",
+      "runtime/libssl-3.dll",
+      "runtime/_decimal.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/zlib1-985e9fefa27bf900be8e4df7dcc97287.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-filesystem-l1-1-0.dll": [
+      "runtime/python314.dll",
+      "runtime/libssl-3.dll",
+      "runtime/libcrypto-3.dll",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-locale-l1-1-0.dll": [
+      "runtime/python314.dll",
+      "runtime/pythonw.exe",
+      "runtime/python.exe",
+      "runtime/_decimal.pyd",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd"
+    ],
+    "api-ms-win-crt-process-l1-1-0.dll": [
+      "runtime/python314.dll"
+    ],
+    "api-ms-win-crt-time-l1-1-0.dll": [
+      "runtime/python314.dll",
+      "runtime/libtommath.dll",
+      "runtime/libssl-3.dll",
+      "runtime/libcrypto-3.dll",
+      "runtime/sqlite3.dll",
+      "runtime/_zstd.pyd",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/sqlite3-9415ebc42378ab15b741623972c45846.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd"
+    ],
+    "bcrypt.dll": [
+      "runtime/python314.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll"
+    ],
+    "version.dll": [
+      "runtime/python314.dll"
+    ],
+    "ws2_32.dll": [
+      "runtime/python314.dll",
+      "runtime/_socket.pyd",
+      "runtime/_ssl.pyd",
+      "runtime/libssl-3.dll",
+      "runtime/select.pyd",
+      "runtime/_multiprocessing.pyd",
+      "runtime/_overlapped.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll"
+    ],
+    "oleaut32.dll": [
+      "runtime/_wmi.pyd",
+      "runtime/_ctypes.pyd"
+    ],
+    "propsys.dll": [
+      "runtime/_wmi.pyd"
+    ],
+    "ole32.dll": [
+      "runtime/_ctypes.pyd",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd"
+    ],
+    "iphlpapi.dll": [
+      "runtime/_socket.pyd",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll"
+    ],
+    "rpcrt4.dll": [
+      "runtime/_socket.pyd",
+      "runtime/_uuid.pyd"
+    ],
+    "crypt32.dll": [
+      "runtime/_ssl.pyd",
+      "runtime/libcrypto-3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll"
+    ],
+    "api-ms-win-crt-utility-l1-1-0.dll": [
+      "runtime/libssl-3.dll",
+      "runtime/libcrypto-3.dll",
+      "runtime/sqlite3.dll",
+      "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_webp.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/numpy/_core/_multiarray_tests.cp314-win_amd64.pyd"
+    ],
+    "winmm.dll": [
+      "runtime/winsound.pyd"
+    ],
+    "psapi.dll": [
+      "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd"
+    ],
+    "gdi32.dll": [
+      "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd"
+    ],
+    "shell32.dll": [
+      "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd"
+    ],
+    "secur32.dll": [
+      "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll"
+    ],
+    "comctl32.dll": [
+      "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd"
+    ]
+  },
+  "binaries": [
+    {
+      "file": "RiverLakeCartography.exe",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "user32.dll"
+      ]
+    },
+    {
+      "file": "runtime/python314.dll",
+      "machine": "0x8664",
+      "imports": [
+        "advapi32.dll",
+        "api-ms-win-core-path-l1-1-0.dll",
+        "api-ms-win-crt-conio-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-process-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "bcrypt.dll",
+        "kernel32.dll",
+        "vcruntime140.dll",
+        "version.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/pyexpat.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_bz2.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_elementtree.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_wmi.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "oleaut32.dll",
+        "propsys.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/_ctypes.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "libffi-8.dll",
+        "ole32.dll",
+        "oleaut32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/vcruntime140.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll"
+      ]
+    },
+    {
+      "file": "runtime/_socket.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "rpcrt4.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/_lzma.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/vcruntime140_1.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_queue.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/pythonw.exe",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_zoneinfo.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/libtommath.dll",
+      "machine": "0x8664",
+      "imports": [
+        "advapi32.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "kernel32.dll"
+      ]
+    },
+    {
+      "file": "runtime/_ssl.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "crypt32.dll",
+        "kernel32.dll",
+        "libcrypto-3.dll",
+        "libssl-3.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/_remote_debugging.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/python.exe",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_hashlib.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "libcrypto-3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_asyncio.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/libssl-3.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "libcrypto-3.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/select.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/_decimal.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_multiprocessing.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/unicodedata.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/winsound.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "winmm.dll"
+      ]
+    },
+    {
+      "file": "runtime/python3.dll",
+      "machine": "0x8664",
+      "imports": []
+    },
+    {
+      "file": "runtime/_overlapped.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/_sqlite3.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "sqlite3.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_uuid.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "rpcrt4.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/libcrypto-3.dll",
+      "machine": "0x8664",
+      "imports": [
+        "advapi32.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "crypt32.dll",
+        "kernel32.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll"
+      ]
+    },
+    {
+      "file": "runtime/libffi-8.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/sqlite3.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/_zstd.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "build_tools/RiverLakeCartography.exe",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "user32.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy.libs/msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy.libs/libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-conio-l1-1-0.dll",
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-private-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_imagingtk.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "psapi.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_imaging.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "user32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_avif.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_imagingmorph.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_imagingcms.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "gdi32.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "user32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_imagingmath.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_imagingft.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/PIL/_webp.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/contourpy/_contourpy.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/shapely.libs/geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+        "kernel32.dll",
+        "msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/shapely.libs/geos-bf067cd6ff74ee0ad5f3ff52c7ef08c9.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/shapely.libs/msvcp140-0fa7eb792d3fbcf2233e4ea47e9144b9.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+        "msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+        "ole32.dll",
+        "shell32.dll",
+        "sqlite3-9415ebc42378ab15b741623972c45846.dll",
+        "tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/sqlite3-9415ebc42378ab15b741623972c45846.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/zlib1-985e9fefa27bf900be8e4df7dcc97287.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/libcurl-f49442d4be7d953952a0509cdd4501fa.dll",
+      "machine": "0x8664",
+      "imports": [
+        "advapi32.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "bcrypt.dll",
+        "crypt32.dll",
+        "iphlpapi.dll",
+        "kernel32.dll",
+        "secur32.dll",
+        "vcruntime140.dll",
+        "ws2_32.dll",
+        "zlib1-985e9fefa27bf900be8e4df7dcc97287.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/tiff-69dcdf91c822b00d23e8dbf49655fe78.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+        "kernel32.dll",
+        "liblzma-3c4c8780fcad6ce56344d2b5594bda5b.dll",
+        "vcruntime140.dll",
+        "zlib1-985e9fefa27bf900be8e4df7dcc97287.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/msvcp140-7c26614e1d733892c2deac7e245ce115.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/jpeg62-971fedc88cb0e86c3ad978ae1b7646db.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj.libs/liblzma-3c4c8780fcad6ce56344d2b5594bda5b.dll",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/kiwisolver/_cext.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/shapely/lib.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/shapely/_geometry_helpers.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "geos_c-6dd9fd915eef8a7928285416bef1e666.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/shapely/_geos.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_version.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_geod.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_transformer.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_network.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/database.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/list.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_context.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_crs.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_compat.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/pyproj/_sync.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "proj_9-7e5618bddacc5af688a84f477cf114c3.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/ft2font.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/_image.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/_tri.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/_path.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/_qhull.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/_c_internal_utils.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "ole32.dll",
+        "python314.dll",
+        "shell32.dll",
+        "user32.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/fontTools/feaLib/lexer.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/fontTools/pens/momentsPen.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/fontTools/qu2cu/qu2cu.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/fontTools/cu2qu/cu2qu.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/fontTools/misc/bezierTools.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/fontTools/varLib/iup.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/linalg/lapack_lite.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/linalg/_umath_linalg.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "kernel32.dll",
+        "libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/_core/_operand_flag_tests.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/_core/_rational_tests.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/_core/_multiarray_umath.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-convert-l1-1-0.dll",
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-locale-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "libscipy_openblas64_-ed4f167a5330424524f45258e7ca2c8d.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/_core/_umath_tests.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/_core/_struct_ufunc_tests.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/_core/_multiarray_tests.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-utility-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/_core/_simd.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-environment-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/fft/_pocketfft_umath.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "msvcp140-a4c2229bdc2a2a630acdc095b4d86008.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/_philox.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/_bounded_integers.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/_generator.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/_mt19937.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/_sfc64.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/_common.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/_pcg64.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/mtrand.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/numpy/random/bit_generator.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/backends/_tkagg.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "comctl32.dll",
+        "kernel32.dll",
+        "psapi.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    },
+    {
+      "file": "runtime/Lib/site-packages/matplotlib/backends/_backend_agg.cp314-win_amd64.pyd",
+      "machine": "0x8664",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "python314.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "knowledge_checked_date": "2026-11-09",
+  "timezone": "Asia/Shanghai",
+  "record_type": "English translation of the original research record; not a new access test of every linked page.",
+  "maintenance_policy": "Check the specific map edition for each task and current applicable rules for actual public use. This index records read scope and does not claim all websites, symbol tables or online functions were reviewed.",
+  "sources": [
+    {
+      "id": "national-standard-map-original",
+      "url": "http://bzdt.ch.mnr.gov.cn/index.html",
+      "type": "official_service",
+      "title": "Ministry of Natural Resources standard-map service (original user-specified entry)",
+      "reading_status": "Direct page, browser and ordinary HTTP access failed during the original review; no conclusion of permanent closure.",
+      "verified_scope": "The entry was supplied by the user and was corroborated by a Shanghai official explanatory page.",
+      "refresh_when": "Whenever selecting or downloading an actual map from the national service."
+    },
+    {
+      "id": "national-standard-map-index",
+      "url": "https://bzdt.tianditu.gov.cn/",
+      "type": "official_service_index",
+      "title": "Standard Map Service System",
+      "reading_status": "Search-index text was readable; direct page access returned 502/503. Registration, self-service editing and export were not tested.",
+      "verified_scope": "Indexed categories, name/approval-number search, general JPG/EPS descriptions and self-service mapping descriptions.",
+      "limitations": "An index can lag. No formal migration from the original hostname was verified. General format statements do not establish EPS or GIS availability for every map."
+    },
+    {
+      "id": "jiangsu-standard-map-catalog",
+      "url": "https://zrzy.jiangsu.gov.cn/jsbzdt/index.html",
+      "type": "official_service",
+      "title": "Jiangsu Department of Natural Resources standard-map service",
+      "reading_status": "Ordinary HTTP GET returned 200 and the catalog HTML was read; the web-search fetch timed out.",
+      "verified_scope": "Catalog scales, sheet formats, update dates, preview/download links for administrative, basic, hydrology and transport maps.",
+      "limitations": "Read the actual approval number on the map. Catalog dates are not survey dates; a new-edition announcement does not change an older static download."
+    },
+    {
+      "id": "map-regulation-2015",
+      "url": "https://xzfg.moj.gov.cn/front/law/detail?LawID=421",
+      "type": "administrative_regulation",
+      "title": "Map Administration Regulation",
+      "version": "State Council Order No. 664; effective 2016-01-01.",
+      "reading_status": "Official full text was read in the original review.",
+      "key_provisions": [
+        "Article 2: scope",
+        "Article 9: sources and content",
+        "Article 11: administrative boundaries",
+        "Article 14: public-service maps",
+        "Article 15: review",
+        "Articles 17–18: jurisdiction",
+        "Article 22: approval number"
+      ],
+      "refresh_when": "Public-use tasks or indications of amendment."
+    },
+    {
+      "id": "map-review-2019",
+      "url": "https://www.mfa.gov.cn/wjb_673085/zzjg_673183/bjhysws_674671/bhflfg/dtdmxgfl/202303/P020230313586143347764.pdf",
+      "type": "departmental_rule",
+      "sha256": "009e32b821119ad872115b0060133b89798d25438d62f6ce38de2495620ccb73",
+      "title": "Map Review Administration Provisions",
+      "version": "2019-amended text.",
+      "reading_status": "The official hosted PDF was read in full and hashed during the original review. It is linked externally, not bundled in this English edition.",
+      "key_provisions": [
+        "Article 5: changed content",
+        "Article 6: review exemptions",
+        "Article 10: exemption from submitting a qualification certificate",
+        "Article 27: approval-number display",
+        "Article 28: internet-map-service number validity",
+        "Article 32: consistency of the final product"
+      ],
+      "limitations": "Review exemption and exemption from supplying a qualification document are different. Internet-service-specific clauses must not be generalized to every static presentation map.",
+      "snapshot_policy": "External official source only in this English edition."
+    },
+    {
+      "id": "public-map-content-2023",
+      "url": "https://www.fmprc.gov.cn/web/wjb_673085/zzjg_673183/bjhysws_674671/bhflfg/dtdmxgfl/202303/P020230313585504979937.pdf",
+      "type": "normative_document",
+      "sha256": "3a3bc9dd76a0edf7ca9248965c60a4082ce5aac637461b3e1001103e817855d8",
+      "title": "Public Map Content Representation Specification",
+      "version": "Ministry of Natural Resources normative document No. 2 of 2023, issued/effective 2023-02-06.",
+      "reading_status": "The official hosted PDF was read in full and hashed during the original review. It is linked externally, not bundled in this English edition.",
+      "validity_text": "Item 23 states a five-year term. Recheck amendments and continuation/replacement, especially near or after February 2028.",
+      "key_provisions": [
+        "Item 2: scope",
+        "Item 4: administrative boundaries",
+        "Item 5: complete maps of China",
+        "Item 6: Hainan and South China Sea insets",
+        "Item 13: geographical names",
+        "Item 16: thematic information",
+        "Items 19, 21 and 22: content-dependent checks",
+        "Item 23: validity"
+      ],
+      "limitations": "Apply provisions only to the corresponding content and extent. Do not require a national inset on every local map or characterize all basic river/lake outlines as prohibited.",
+      "snapshot_policy": "External official source only in this English edition."
+    },
+    {
+      "id": "official-map-use-qa-2023",
+      "url": "https://ghzyj.sh.gov.cn/hyxw/20230222/c97d40c87fc84a0f8cd414a6bf2b8fb9.html",
+      "type": "official_explanation",
+      "title": "Using Maps of China Correctly: official explanatory Q&A",
+      "publisher": "Shanghai Municipal Bureau of Planning and Natural Resources; source: iNaturalResources media.",
+      "version": "Page publication date: 2023-02-20.",
+      "reading_status": "Full page read in the original review.",
+      "verified_scope": "Direct use, editing and recoloring, approval numbers and submission material.",
+      "limitations": "Explanatory material does not replace current rules or a specific service guide. No universal percentage-rescaling exemption is inferred."
+    },
+    {
+      "id": "geoname-regulation-2022",
+      "url": "https://www.mee.gov.cn/zcwj/gwywj/202204/t20220421_975554.shtml",
+      "type": "administrative_regulation",
+      "title": "Regulation on the Administration of Geographical Names",
+      "version": "Issued in 2022; effective 2022-05-01.",
+      "reading_status": "Relevant standard-name provisions in the official text were read.",
+      "verified_scope": "Article 15: standard geographical names; Article 18: applicable use contexts.",
+      "refresh_when": "Standard-name, administrative-change or public-map tasks."
+    },
+    {
+      "id": "geoname-census-labeling",
+      "url": "https://www.abazhou.gov.cn/abazhou/c109727/201501/943e47fc205a4b09bd805356af5f83c1.shtml",
+      "type": "technical_reference",
+      "title": "Second National Geographical Names Census Working Procedures",
+      "version": "Aba Prefecture government page dated 2015-01-13.",
+      "reading_status": "Relevant geographical-location/labeling sections and Article 25 were read.",
+      "verified_scope": "Point names correspond to points; line names follow the feature; area names lie in their area; labels avoid obscuring symbols.",
+      "limitations": "The original context is a geographical-name census. Its working-map scale, CGCS2000 and measurement requirements are not automatically requirements for every presentation map."
+    },
+    {
+      "id": "provincial-spatial-planning-guide-h",
+      "url": "https://dnr.gxzf.gov.cn/ztzl/gtkjgh/jsbz/gjjsbz/P020231211346162654422.pdf",
+      "type": "technical_reference",
+      "title": "Provincial Spatial Planning Preparation Guide (Trial), Appendix H",
+      "version": "Ministry of Natural Resources, January 2020; officially hosted Guangxi PDF.",
+      "reading_status": "Relevant excerpts were read through the official PDF search index; full download returned 503/timed out during the original session.",
+      "verified_scope": "H.3.1.2 administrative-seat points/names, related H.3.2 labels and H.3.3.6 lower-left/lower-right legend choices.",
+      "limitations": "No claim that the entire guide was read page by page. Planning atlas/sheet specifications are not automatically presentation specifications. This project fixes the lower-left through the user requirement."
+    },
+    {
+      "id": "gbt-24354-2023",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=ACE4299ACBA71AB50AFED1462C19A75B",
+      "type": "standard_catalog",
+      "title": "GB/T 24354-2023: General Map Symbols for Public Geographic Information",
+      "reading_status": "The national standards catalog was checked; the complete symbol tables were not read.",
+      "limitations": "Obtain and check the actual standard before claiming compliance with particular symbols, line patterns or dimensions."
+    },
+    {
+      "id": "gbt-20257-3-2017",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=288C537E66D4001BD11CBCEFF0FBE3C5",
+      "type": "standard_catalog",
+      "title": "GB/T 20257.3-2017: Cartographic Symbols for National Fundamental Scale Maps, Part 3",
+      "reading_status": "The catalog and scale range were checked; complete symbol tables were not read.",
+      "verified_scope": "Topographic maps at 1:25,000, 1:50,000 and 1:100,000.",
+      "limitations": "A specified map-type/scale standard is not a universal font-size and line-width prescription for all river/lake presentation maps."
+    },
+    {
+      "id": "osm-license",
+      "url": "https://www.openstreetmap.org/copyright",
+      "type": "data_license",
+      "title": "OpenStreetMap Copyright and License",
+      "reading_status": "Official license and attribution guidance was read.",
+      "verified_scope": "Open data uses ODbL; displayed products require the applicable contributor attribution and license-access information.",
+      "limitations": "An open license does not certify administrative boundaries or replace thematic-data quality and applicable public-map checks."
+    },
+    {
+      "id": "jiangsu-standard-map-release-2026",
+      "url": "https://zgjssw.jschina.com.cn/yaowen/202608/t20260829_8590884.shtml",
+      "type": "official_release_news",
+      "title": "Jiangsu 2026 Standard Map Edition Release",
+      "version": "Published 2026-08-29; release event dated 2026-08-28.",
+      "reading_status": "Xinhua Daily reporting hosted by the provincial party news website was read.",
+      "verified_scope": "The report described release of the 2026 edition on the provincial natural-resources website and Tianditu Jiangsu.",
+      "limitations": "Release news does not prove the old static sxb.rar changed. The actual downloaded hydrology sample remained a 2025 file; a new file must be separately verified."
+    },
+    {
+      "id": "shijiu-water-bureau-overview-2025",
+      "url": "https://shuiwu.nanjing.gov.cn/bmdt/202510/t20251024_5676234.html",
+      "type": "official_thematic_reference",
+      "title": "Shijiu Lake",
+      "version": "2025-10-24.",
+      "reading_status": "The Nanjing Water Affairs Bureau page was read.",
+      "verified_scope": "Jiangsu/Anhui and four-county/district setting, waterway connections and flood-season backflow overview.",
+      "limitations": "Context for preliminary affiliation/name/hydrology checks, not a substitute for spatial geometry. Thematic quantities are not automatically added to the map."
+    },
+    {
+      "id": "shijiu-water-bureau-reply-2023",
+      "url": "https://www.nanjing.gov.cn/xxgkn/jytabljggk/2023njytabl/shirddbjy/202312/t20231205_4115419.html",
+      "type": "official_thematic_reference",
+      "title": "Reply to Proposal No. 0279 of the First Session of the 17th Municipal People’s Congress",
+      "version": "Reply dated 2023-07-26; webpage published 2023-12-05.",
+      "reading_status": "The Water Affairs Bureau reply hosted on the Nanjing government portal was read.",
+      "verified_scope": "Four-county/district affiliation and textual connections involving Xinqiao, Tianshengqiao, Tanggou, Sancha and Shuiyang/Guxi waterways.",
+      "limitations": "A textual connection statement is not drawable geometry. Historical engineering and monitoring information needs new verification; this source is not used to position monitoring locations."
+    }
+  ],
+  "downloaded_map_examples": [
+    {
+      "id": "jiangsu-water-1m-2025",
+      "catalog_url": "https://zrzy.jiangsu.gov.cn/jsbzdt/index.html",
+      "preview_url": "https://zrzy.jiangsu.gov.cn/jsbzdt/dtll/sxb/index.html",
+      "download_url": "https://zrzy.jiangsu.gov.cn/jsbzdt/dtll/sxb.rar",
+      "reading_status": "Complete RAR downloaded; member list, full JPG, legend and approval-number detail inspected during the original research. Original archive is not bundled.",
+      "catalog_scale": "1:1,000,000",
+      "catalog_content": "Hydrology",
+      "sheet_size": "Half-sheet",
+      "catalog_update": "2025-08-27",
+      "filename_edition": "2025",
+      "http_last_modified": "2025-08-28",
+      "retrieved_date": "2026-11-09",
+      "archive_bytes": 25532934,
+      "sha256": "6b351391a480d1fd0a96bcf489bd1e7891d4b9ad0d7aae4f1447c0fdd3ea3a1d",
+      "archive_members_english_description": [
+        "One EPS: Jiangsu hydrology map, 1:1,000,000, half-sheet, 2025",
+        "One JPG: the same edition"
+      ],
+      "member_description_note": "English descriptions rather than original-language filenames.",
+      "image_pixels": [
+        9295,
+        7086
+      ],
+      "original_map_audit_number_transliteration": "Su S (2025) 31",
+      "audit_number_scope": "Transliterated historical identity of the inspected original only. Never reuse it as approval of a derivative. Refer to the actual original map for its exact number.",
+      "legend_observed": [
+        "Province boundary",
+        "Prefecture boundary",
+        "Provincial administrative seat",
+        "Prefecture administrative seat",
+        "County/city/district administrative seat",
+        "Grand Canal",
+        "River",
+        "Lake/reservoir"
+      ],
+      "limitations": "EPS/JPG only. County seat symbols do not establish county boundaries. A provincial 1:1,000,000 map does not supply fine lake-area geometry. The legacy Flash preview was replaced by local inspection of the downloaded file."
+    },
+    {
+      "id": "china-3000qg-format-counterexample",
+      "catalog_url": "https://zrzy.jiangsu.gov.cn/jsbzdt/index.html",
+      "download_url": "https://zrzy.jiangsu.gov.cn/jsbzdt/dtll/3000qg.rar",
+      "reading_status": "Archive downloaded and inspected; one JPG member only. Original archive is not bundled.",
+      "catalog_update": "2016-12-16",
+      "archive_bytes": 1137207,
+      "sha256": "fdb716d0ea41fe1a322a707430aafd1df821d95ebd7d22803cbadc9a4a7fab05",
+      "limitations": "A format counterexample, not the default latest national background for a new task."
+    }
+  ],
+  "freshness_check": {
+    "date": "2026-11-09",
+    "scope": "Original search for continued validity or changes to the 2019-amended review provisions and the 2023 public-content specification.",
+    "observed": [
+      "A Fujian natural-resources catalog marked the 2019-amended review provisions effective.",
+      "The Ministry of Natural Resources 2024 No. 41 continued-validity list included the 2023 No. 2 document."
+    ],
+    "urls": [
+      "https://zrzyt.fujian.gov.cn/zwgk/zcfg/flfg/202104/t20210419_5577481.htm",
+      "https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=100431"
+    ],
+    "limitations": "No replacement was identified during that check. It is not a guarantee of future validity; actual public-use tasks need a current check."
+  }
+}

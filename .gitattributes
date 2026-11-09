@@ -1,0 +1,22 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.geojson text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.c text eol=lf
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.exe binary
+*.ttc binary
+*.png binary
+*.zip binary
+
+# Preserve the exact upstream license bytes used by the font integrity check.
+app/resources/fonts/LICENSE-NOTO.txt -text

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="app-token" content="__APP_TOKEN__">
+  <meta name="color-scheme" content="light">
+  <title>River Lake Cartography</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="River Lake Cartography home">
+      <span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M5 9c8 10 5 12 14 15s8 8 16 7" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/><path d="M5 20c6-5 14-4 20-1s10 3 10-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".65"/><path d="M25 6c-5 5-7 9-6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".65"/></svg></span>
+      <span><strong>River Lake</strong><small>CARTOGRAPHY DESKTOP</small></span>
+    </a>
+    <div class="nav-caption">CREATE A MAP</div>
+    <nav class="nav" role="tablist" aria-label="Choose a map data source">
+      <button id="tab-online" class="nav-item active" role="tab" aria-selected="true" aria-controls="panel-online" data-tab="online"><span class="nav-icon" aria-hidden="true">⌕</span><span>Online data<small>Search a place and create a draft</small></span></button>
+      <button id="tab-import" class="nav-item" role="tab" aria-selected="false" aria-controls="panel-import" data-tab="import"><span class="nav-icon" aria-hidden="true">↥</span><span>Import data<small>Use your own GeoJSON layers</small></span></button>
+      <button id="tab-examples" class="nav-item" role="tab" aria-selected="false" aria-controls="panel-examples" data-tab="examples"><span class="nav-icon" aria-hidden="true">▦</span><span>Examples<small>Try the complete workflow</small></span></button>
+    </nav>
+    <div class="rules-card">
+      <div class="eyebrow">CARTOGRAPHIC RULES</div>
+      <ol><li><b>Follow the river</b><span>Names follow actual channels, without leader lines</span></li><li><b>Lower-left legend</b><span>Keep the legend inside the main map frame</span></li><li><b>Respect administrative levels</b><span>Use the correct hierarchy and keep the complete label inside its area</span></li></ol>
+    </div>
+    <div class="sidebar-foot"><span class="connection-dot" id="connection-dot"></span><span id="connection-label">Connecting to the local app</span><small id="app-version">Loading version</small></div>
+  </aside>
+
+  <div class="main-shell">
+    <header class="topbar"><div><div class="eyebrow">WATER AND ADMINISTRATIVE MAPS</div><h1>Make the geography clear</h1></div><div class="top-actions"><label class="sr-only" for="project-select">Open an existing project</label><select id="project-select"><option value="">Existing projects</option></select><button id="open-project" class="button button-quiet" disabled>Open</button><button id="shutdown" class="icon-button" title="Exit the local application" aria-label="Exit the local application">⏻</button></div></header>
+    <main>
+      <div id="global-message" class="notice" role="status" hidden></div>
+      <div class="workspace-grid">
+        <section class="input-card" aria-label="Map configuration">
+          <div id="panel-online" class="source-panel" role="tabpanel" aria-labelledby="tab-online">
+            <div class="panel-heading"><span class="step-number">01</span><div><h2>Choose a map extent</h2><p>Select a place, then download open water data.</p></div></div>
+            <form id="online-form">
+              <label class="field-label" for="map-query">Place name <span class="required">*</span></label>
+              <div class="search-row"><input id="map-query" name="query" placeholder="For example: Chaohu Lake, Anhui" autocomplete="off" maxlength="160"><button id="search-location" type="button" class="button button-secondary">Search</button></div>
+              <p class="field-hint">Include the city or region to distinguish namesakes. Select a result or enter an extent below.</p>
+              <div id="search-results" class="search-results" aria-live="polite" hidden></div>
+              <div id="selected-location" class="selected-location" hidden></div>
+
+              <label class="field-label" for="map-title">Map title</label><input id="map-title" placeholder="Leave blank to use the selected place" maxlength="100">
+              <label class="field-label" for="map-mode">Main subject</label><select id="map-mode"><option value="lake">Lake and surrounding waters</option><option value="river">River corridor</option><option value="area">Regional water network</option></select>
+
+              <details class="advanced"><summary>Adjust geographic extent <span>optional</span></summary><p class="field-hint">Use degrees in west, south, east, north order. Intended for local thematic maps.</p><div class="bbox-grid"><label>West longitude<input id="bbox-west" type="number" step="any" min="-180" max="180" placeholder="West"></label><label>South latitude<input id="bbox-south" type="number" step="any" min="-90" max="90" placeholder="South"></label><label>East longitude<input id="bbox-east" type="number" step="any" min="-180" max="180" placeholder="East"></label><label>North latitude<input id="bbox-north" type="number" step="any" min="-90" max="90" placeholder="North"></label></div></details>
+
+              <label class="field-label" for="admin-queries">Administrative areas <span class="optional">optional</span></label><textarea id="admin-queries" rows="2" placeholder="One full name per line, for example: Gaochun District, Nanjing"></textarea>
+              <p class="field-hint">List the areas to query for boundaries and names.</p>
+              <label class="field-label" for="river-names">Required river names <span class="optional">optional</span></label><textarea id="river-names" rows="2" placeholder="One name per line; leave blank for automatic suggestions"></textarea>
+              <label class="field-label" for="online-resolution">Output size</label><select id="online-resolution"><option value="3840">3840 × 2160 · High-resolution slides</option><option value="1920">1920 × 1080 · Quick preview</option></select>
+
+              <div class="source-note"><b>Draft from open data</b><span>Online mode uses OpenStreetMap. Verify coverage and boundary suitability for your task. Use Import data for your own authoritative layers.</span></div>
+              <button type="submit" class="button button-primary button-wide action-button" id="create-map">Fetch data and render <span aria-hidden="true">→</span></button>
+            </form>
+          </div>
+
+          <div id="panel-import" class="source-panel" role="tabpanel" aria-labelledby="tab-import" hidden>
+            <div class="panel-heading"><span class="step-number">01</span><div><h2>Use your spatial data</h2><p>Import layers and record their sources.</p></div></div>
+            <form id="import-form">
+              <label class="field-label" for="import-title">Map title <span class="required">*</span></label><input id="import-title" placeholder="Enter a title for this map" maxlength="100" required>
+              <div class="upload-group" data-role="lake"><div class="upload-heading"><b>Lake / reservoir polygons</b><span>Polygon / MultiPolygon</span></div><label class="file-picker"><span id="lake-file-name">Choose a GeoJSON file</span><input id="lake-file" type="file" accept=".geojson,.json,application/geo+json,application/json" data-layer="lake"></label><details class="source-details"><summary>Data source</summary><label>Provider or dataset name<input id="lake-source-name" placeholder="For example: project survey dataset"></label><label>Source URL<input id="lake-source-url" type="url" placeholder="https://... (if available)"></label><label>Data year<input id="lake-source-year" placeholder="Leave blank if unknown" maxlength="40"></label></details></div>
+              <div class="upload-group" data-role="rivers"><div class="upload-heading"><b>River lines</b><span>LineString / MultiLineString</span></div><label class="file-picker"><span id="rivers-file-name">Choose a GeoJSON file</span><input id="rivers-file" type="file" accept=".geojson,.json,application/geo+json,application/json" data-layer="rivers"></label><details class="source-details"><summary>Data source</summary><label>Provider or dataset name<input id="rivers-source-name" placeholder="For example: agency river dataset"></label><label>Source URL<input id="rivers-source-url" type="url" placeholder="https://... (if available)"></label><label>Data year<input id="rivers-source-year" placeholder="Leave blank if unknown" maxlength="40"></label></details></div>
+              <div class="upload-group" data-role="admin"><div class="upload-heading"><b>Administrative polygons</b><span>Polygon / MultiPolygon</span></div><label class="file-picker"><span id="admin-file-name">Choose a GeoJSON file</span><input id="admin-file" type="file" accept=".geojson,.json,application/geo+json,application/json" data-layer="admin"></label><details class="source-details"><summary>Data source</summary><label>Provider or dataset name<input id="admin-source-name" placeholder="For example: official boundary dataset"></label><label>Source URL<input id="admin-source-url" type="url" placeholder="https://... (if available)"></label><label>Data year<input id="admin-source-year" placeholder="Leave blank if unknown" maxlength="40"></label></details></div>
+              <label class="field-label" for="import-admin-level">Administrative level</label><select id="import-admin-level"><option value="">Read each feature's attributes</option><option value="province">All features are province level</option><option value="city">All features are city / prefecture level</option><option value="county">All features are county / district level</option></select><p class="field-hint">For mixed levels, retain the true level on each feature. Select at least one layer. Names use the name field by default; other fields can be set in the configuration.</p>
+              <label class="check-row"><input id="confirm-crs" type="checkbox"><span>I confirm that the layers use EPSG:4326 (WGS84), with longitude before latitude.</span></label>
+              <details class="advanced"><summary>Import a map configuration <span>optional</span></summary><p class="field-hint">Select map_job.json to reuse label settings. Select the referenced layer files as well.</p><input id="job-file" type="file" accept=".json,application/json"></details>
+              <label class="field-label" for="import-river-names">Required river names <span class="optional">optional</span></label><textarea id="import-river-names" rows="2" placeholder="One name per line; names must match the river data"></textarea>
+              <label class="field-label" for="import-resolution">Output size</label><select id="import-resolution"><option value="3840">3840 × 2160 · High-resolution slides</option><option value="1920">1920 × 1080 · Quick preview</option></select>
+              <button type="submit" class="button button-primary button-wide action-button" id="import-map">Prepare data and render <span aria-hidden="true">→</span></button>
+            </form>
+          </div>
+
+          <div id="panel-examples" class="source-panel" role="tabpanel" aria-labelledby="tab-examples" hidden>
+            <div class="panel-heading"><span class="step-number">01</span><div><h2>Start with the example</h2><p>Use the bundled data to try the rendering workflow.</p></div></div>
+            <div id="example-list" class="example-list"><p class="field-hint">Loading examples...</p></div>
+            <div class="guide-card"><h3>Suggested workflow</h3><ol><li>Generate the example to check that the app runs.</li><li>Search for a new area or import your own data.</li><li>Review the image and quality report, then download the results.</li></ol></div>
+            <div class="source-note"><b>Current scope</b><span>Supports open vector data, GeoJSON preparation, and rule-based rendering. Monitoring-point positioning, DEM river extraction, and dated satellite water detection require separate workflows.</span></div>
+          </div>
+        </section>
+
+        <section class="result-column" aria-label="Map results">
+          <div class="preview-card">
+            <div class="preview-header"><div><span class="eyebrow">MAP PREVIEW</span><h2 id="preview-title">Map preview</h2></div><span id="result-badge" class="badge badge-neutral">Ready to start</span></div>
+            <div class="preview-stage" id="preview-stage">
+              <div class="preview-empty" id="preview-empty"><svg viewBox="0 0 400 210" aria-hidden="true" fill="none"><path d="M55 44L148 23L249 50L345 27V164L254 187L148 160L55 183Z" fill="#F7FAFC" stroke="#D5E3ED" stroke-width="2"/><path d="M148 23V160M249 50L254 187" stroke="#D5E3ED" stroke-width="2" stroke-dasharray="5 5"/><path d="M112 40C158 68 112 94 177 101C231 106 201 142 272 159" stroke="#A3CCE3" stroke-width="8" stroke-linecap="round"/><path d="M270 55C250 80 233 91 220 120" stroke="#A3CCE3" stroke-width="5" stroke-linecap="round"/><ellipse cx="204" cy="111" rx="37" ry="20" transform="rotate(20 204 111)" fill="#D9EDF7" stroke="#A3CCE3" stroke-width="2"/></svg><h3>Your next map starts here</h3><p>Choose a place or import data. The rendered map will appear here.</p><button id="try-example" class="button button-secondary">Run the bundled example</button></div>
+              <img id="map-preview" alt="Generated map of waters and administrative areas" hidden>
+              <div id="preview-loading" class="preview-loading" hidden><span class="spinner"></span><span id="preview-loading-message">Rendering the map</span></div>
+            </div>
+            <div class="preview-footer"><span id="preview-caption">16:9 preview | Open the original image to inspect details</span><button id="view-original" class="button button-quiet" disabled>Open original ↗</button></div>
+          </div>
+
+          <section id="progress-card" class="progress-card" aria-live="polite" hidden><div class="progress-heading"><h3 id="progress-title">Rendering</h3><span id="progress-percent"></span></div><div class="progress-track"><div id="progress-bar"></div></div><p id="progress-message">Preparing the task...</p><details id="log-details"><summary>View processing log</summary><pre id="task-log"></pre></details></section>
+
+          <section class="results-card" id="results-card" hidden><div class="results-heading"><h3>Results and quality</h3><span id="project-reference"></span></div><div id="download-list" class="download-list"></div><div id="qa-summary" class="qa-summary"></div><div id="qa-issues" class="qa-issues"></div><details><summary>View the complete quality report</summary><pre id="qa-json"></pre></details><p class="review-note">Quality reports are saved with the map. Inspect the image to verify place names, source suitability, and final appearance.</p><form id="rerender-form" class="revision-form"><label class="field-label" for="revision-title">Update the title and create a new version</label><div class="search-row"><input id="revision-title" maxlength="100" placeholder="Map title"><button type="submit" class="button button-secondary action-button">Render again</button></div><details class="advanced"><summary>Advanced configuration <span>JSON</span></summary><p class="field-hint">Edit label positions and sizes if you know the configuration format, or copy the prompt below for local Codex assistance. Existing versions are preserved.</p><textarea id="revision-job" class="code-editor" rows="12" spellcheck="false" aria-label="Advanced map configuration JSON"></textarea></details></form></section>
+
+          <div class="workspace-note"><span class="note-marker" aria-hidden="true">i</span><p>The legend, river names, and administrative labels follow fixed project rules. Labels that cannot be placed correctly are reported for revision.</p></div>
+          <div class="ai-assist"><div><h3>Need another adjustment?</h3><p>Copy the task, project path, and cartographic rules for local Codex.</p></div><button id="copy-ai-prompt" class="button button-secondary">Copy Codex prompt</button></div>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer"><span>River Lake Cartography <span id="footer-version"></span></span><span>Traceable sources | Consistent labels | Reproducible maps</span></footer>
+  </div>
+</div>
+<div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

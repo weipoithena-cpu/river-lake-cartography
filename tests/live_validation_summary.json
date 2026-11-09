@@ -1,0 +1,111 @@
+{
+  "created_utc": "2026-11-09T12:51:07.670383+00:00",
+  "module": "app/data_service.py",
+  "unit_checks": {
+    "command": "PYTHONPATH=<Linux dependency folder> python tests/data_service_test.py",
+    "tests": 10,
+    "status": "passed"
+  },
+  "live_search": {
+    "provider": "Photon",
+    "status": "passed",
+    "observed_osm_relations": [
+      14305804,
+      2138994
+    ],
+    "queried_places_in_english": [
+      "Shijiu Lake",
+      "Xuanwu Lake, Nanjing"
+    ],
+    "query_language": "The original requests used Chinese names; the place names above are English translations. Recorded request URLs are preserved unchanged."
+  },
+  "live_download_initial": {
+    "provider": "https://overpass.private.coffee/api/interpreter",
+    "status": "downloaded",
+    "location": "Around Xuanwu Lake",
+    "features": {
+      "lake": 39,
+      "rivers": 13,
+      "admin": 15
+    },
+    "admin_level_requested": 8,
+    "note": "The first live test showed that China OSM admin_level 8 represents townships. The final default county query was corrected to 6. The initial snapshot supports water geometry checks but is not a completed county-level map."
+  },
+  "followup_corrected_county_downloads": [
+    {
+      "provider": "https://overpass.private.coffee/api/interpreter",
+      "status": "failed",
+      "reason": "90-second read timeout"
+    },
+    {
+      "provider": "https://overpass-api.de/api/interpreter",
+      "status": "failed",
+      "reason": "HTTP 5xx service busy; the exact status code was not retained in the user-facing exception."
+    }
+  ],
+  "cached_real_data_render": {
+    "status": "failed",
+    "errors": [
+      "Requested river label Hucheng River: placement failed the along-line, reading-order, or collision rules.",
+      "Requested river label Jinchuan River: placement failed the along-line, reading-order, or collision rules.",
+      "Requested river label Zhenzhu River: placement failed the along-line, reading-order, or collision rules."
+    ],
+    "label_counts": {
+      "requested_admin": 0,
+      "placed_admin": 0,
+      "requested_rivers": 4,
+      "placed_rivers": 1,
+      "requested_lakes": 1,
+      "placed_requested_lakes": 1,
+      "automatic_lake_label_candidates": 0,
+      "placed_lake_labels_total": 1
+    },
+    "outputs": [
+      {
+        "file": "diagnostic_preview.png",
+        "kind": "diagnostic"
+      },
+      {
+        "file": "diagnostic_preview.svg",
+        "kind": "diagnostic"
+      }
+    ],
+    "manual_review": "Viewed actual diagnostic PNG; did not mark as passed."
+  },
+  "corrections_from_live_validation": [
+    "Mainland China OSM levels are mapped as 4 province, 5 city/prefecture, and 6 county/district. Level 8 townships are not labelled as counties.",
+    "Unknown administrative levels retain boundaries without inferred labels; the importer can declare their actual level.",
+    "The lake label could be placed using an internal projected anchor and 14 pt text.",
+    "Automatic river labels are screened by their longest continuous visible segment. Missing user-requested names raise an error instead of being silently omitted."
+  ],
+  "remaining_limits": [
+    "Photon and Overpass are third-party services without a guarantee of response time, availability, or coverage.",
+    "Narrow extents and curved or fragmented rivers may prevent placement of all suggested names. QA returns failed with a diagnostic preview instead of claiming completion.",
+    "No complete new county response was obtained after correcting the query. County online end-to-end acceptance remains incomplete; deterministic unit checks verify the level mapping.",
+    "Local GeoJSON import and the bundled example were separately verified through actual rendering during the original development process."
+  ],
+  "network_response_records": [
+    {
+      "url": "https://photon.komoot.io/api/?q=%E7%8E%84%E6%AD%A6%E6%B9%96+%E5%8D%97%E4%BA%AC&limit=8",
+      "retrieved_utc": "2026-11-09T12:40:04.468830+00:00",
+      "request_method": "GET",
+      "bytes": 806,
+      "sha256": "f37b7de0d335a34d9733922e3c8f55a8e5c3053c575581e46bb097f697944a6b"
+    },
+    {
+      "url": "https://overpass.private.coffee/api/interpreter",
+      "retrieved_utc": "2026-11-09T12:41:29.241621+00:00",
+      "request_method": "POST",
+      "bytes": 342344,
+      "sha256": "81ea40e419ddbab13332fc254778591d4d232a82d4b59028a4cfcf1a72b78519"
+    }
+  ],
+  "policy_references": [
+    "https://github.com/komoot/photon/blob/master/README.md",
+    "https://wiki.openstreetmap.org/wiki/Overpass_API",
+    "https://wiki.openstreetmap.org/wiki/China/Boundaries",
+    "https://operations.osmfoundation.org/policies/nominatim/"
+  ],
+  "record_scope": "English translation of the historical Chinese-language development validation record. It does not claim validation of this English release or repeat the original network requests.",
+  "historical_source_sha256": "e2b33d6435f49d84c42906b064490327051b5b49d74189c7ffca5afac85574bb"
+}

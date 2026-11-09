@@ -1,0 +1,23 @@
+name: Feature request
+description: Propose a focused improvement to the workbench.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the mapping task and what currently prevents it.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed behavior
+      description: Explain the desired user-visible result and required data, if known.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Example and acceptance criteria
+      description: Provide a shareable example and explain how the improvement can be verified.

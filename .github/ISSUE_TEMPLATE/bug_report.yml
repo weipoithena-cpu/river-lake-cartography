@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible application or map-rendering problem.
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Application version and operating system
+      placeholder: 1.0.0-preview.1, Windows 11 x64
+    validations:
+      required: true
+  - type: dropdown
+    id: route
+    attributes:
+      label: Input route
+      options:
+        - Offline example
+        - GeoJSON import
+        - Online search/retrieval
+        - Build or startup
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behavior and actual result
+      description: Include the smallest reproducible sequence and relevant quality-report errors.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Shareable evidence
+      description: Attach a small job/data sample or image if available. Remove credentials, personal paths and confidential location data.
+  - type: textarea
+    id: source
+    attributes:
+      label: Data or service details
+      description: For data errors, provide source and CRS. For online errors, include service URL, extent and observed failure time.

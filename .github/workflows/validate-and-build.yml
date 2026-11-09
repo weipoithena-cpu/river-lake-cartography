@@ -1,0 +1,148 @@
+name: Validate and build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      publish_release:
+        description: Publish the tested build as a public preview release
+        type: boolean
+        default: false
+      release_tag:
+        description: Must match v plus the application version
+        type: string
+        default: v1.0.0-preview.1
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  linux:
+    name: Data, rendering, HTTP and DOM checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Install test dependencies
+        run: |
+          python -m pip install --only-binary=:all: -r requirements-windows.txt
+          npm install --ignore-scripts
+      - name: Verify or download the pinned map font
+        run: python build_tools/fetch_font.py
+      - name: Data preparation tests
+        run: python tests/data_service_test.py
+      - name: River label typography checks
+        run: python tests/test_cartographic_labels.py
+      - name: Actual local HTTP and rendering tests
+        run: python tests/test_integration.py
+      - name: Frontend DOM tests with simulated APIs
+        run: npm run test:ui
+      - name: Offline rendering self-test
+        run: python app/main.py --self-test --output-dir build_validation/linux
+      - name: Preserve Linux validation evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: linux-validation
+          path: build_validation/linux/
+          if-no-files-found: warn
+          retention-days: 14
+
+  windows:
+    name: Actual Windows executable self-test
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Assemble and run the native executable
+        shell: pwsh
+        run: ./build_tools/build_windows.ps1 -PythonPath (Get-Command python).Source
+      - name: Package source and checksums
+        shell: pwsh
+        run: |
+          python build_tools/package_source.py
+          if ($LASTEXITCODE -ne 0) { throw "Source packaging failed" }
+          $Lines = Get-ChildItem -LiteralPath dist -Filter *.zip | Sort-Object Name | ForEach-Object {
+            $Hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+            "$Hash  $($_.Name)"
+          }
+          [System.IO.File]::WriteAllLines((Join-Path $PWD "dist/SHA256SUMS.txt"), $Lines, [System.Text.Encoding]::ASCII)
+      - name: Preserve native Windows test evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: windows-validation
+          path: build_validation/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Upload complete portable and source archives
+        uses: actions/upload-artifact@v7
+        with:
+          name: windows-x64-portable
+          path: |
+            dist/*.zip
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+  release:
+    name: Publish requested preview release
+    if: github.event_name == 'workflow_dispatch' && inputs.publish_release && github.ref == 'refs/heads/main'
+    needs: [linux, windows]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: read
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Validate release tag against the application version
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          python - <<'PYCODE'
+          import ast, os
+          from pathlib import Path
+          tree = ast.parse(Path('build_tools/assemble_windows.py').read_text())
+          version = next(ast.literal_eval(node.value) for node in tree.body if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'APP_VERSION' for t in node.targets))
+          if os.environ['RELEASE_TAG'] != 'v' + version:
+              raise SystemExit('Release tag does not match the application version')
+          PYCODE
+      - name: Download this run's tested artifacts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.run_id }}
+        run: gh run download "$RUN_ID" --repo "$GITHUB_REPOSITORY" --name windows-x64-portable --dir release
+      - name: Publish preview with complete ZIP files and checksums
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.release_tag }}
+        run: |
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            echo "This release already exists; no assets were replaced."
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" release/*.zip release/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "River Lake Cartography $RELEASE_TAG" --notes-file RELEASE_NOTES.md --prerelease
